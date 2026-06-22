@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Optimiser son annonce Airbnb : photos, description et algorithme pour louer plus</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', Arial, sans-serif; background: #f0f2f5; min-height: 100vh; padding: 40px 20px; }
+  .container { max-width: 860px; margin: 0 auto; }
+  .header { text-align: center; margin-bottom: 40px; }
+  .header .badge { display: inline-block; background: #e8f4fd; color: #2665AE; font-size: 12px; font-weight: 600; padding: 6px 16px; border-radius: 20px; margin-bottom: 16px; letter-spacing: 1px; text-transform: uppercase; }
+  .header h1 { font-size: 28px; font-weight: 700; color: #1a1a1a; line-height: 1.3; margin-bottom: 8px; }
+  .header .meta { font-size: 14px; color: #888; }
+  .card { background: #fff; border-radius: 16px; box-shadow: 0 2px 20px rgba(0,0,0,0.06); overflow: hidden; margin-bottom: 24px; }
+  .card-header { padding: 20px 24px; border-bottom: 1px solid #f0f0f0; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .card-header h2 { font-size: 15px; font-weight: 600; color: #444; display: flex; align-items: center; gap: 8px; }
+  .card-header h2 span { font-size: 18px; }
+  .btn-copy { background: #2665AE; color: #fff; border: none; padding: 10px 20px; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: background 0.2s; }
+  .btn-copy:hover { background: #1d4f87; }
+  .btn-copy.copied { background: #27ae60; }
+  .preview { padding: 28px 32px; font-size: 15px; line-height: 1.75; color: #2a2a2a; outline: none; }
+  .preview:focus { box-shadow: inset 0 0 0 2px #e8f4fd; }
+  .preview h2 { font-size: 20px; margin: 22px 0 10px; line-height: 1.35; }
+  .preview h3 { font-size: 17px; margin: 18px 0 8px; }
+  .preview p { margin: 0 0 14px; }
+  .preview ul { margin: 0 0 14px 20px; }
+  .preview li { margin-bottom: 6px; }
+  .preview a { color: #2665AE; }
+  .edit-hint { font-size: 12px; color: #aaa; padding: 0 32px 20px; }
+  .instructions { background: #fff; border-radius: 16px; box-shadow: 0 2px 20px rgba(0,0,0,0.06); padding: 24px; }
+  .instructions h3 { font-size: 15px; font-weight: 600; color: #444; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+  .steps { list-style: none; }
+  .steps li { display: flex; align-items: flex-start; gap: 12px; padding: 10px 0; border-bottom: 1px solid #f5f5f5; font-size: 14px; color: #555; }
+  .steps li:last-child { border-bottom: none; }
+  .step-num { background: #2665AE; color: #fff; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0; }
+  .footer { text-align: center; margin-top: 32px; font-size: 12px; color: #aaa; }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="header">
+    <div class="badge">📝 Article prêt à relire</div>
+    <h1>Optimiser son annonce Airbnb : photos, description et algorithme pour louer plus</h1>
+    <div class="meta">Généré automatiquement · À relire puis publier sur votre blog</div>
+  </div>
+
+  <div style="background:#fff; border-radius:16px; box-shadow:0 2px 20px rgba(0,0,0,0.06); padding:24px; margin-bottom:24px;">
+    <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:#888; margin-bottom:8px;">Titre de l'article</div>
+    <div style="font-size:16px; font-weight:700; color:#1a1a1a; margin-bottom:20px; padding:12px 16px; background:#f8f8f8; border-radius:8px; border-left:3px solid #2665AE;">Optimiser son annonce Airbnb : photos, description et algorithme pour louer plus</div>
+    <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:#888; margin-bottom:8px;">Tags suggérés</div>
+    <div style="font-size:14px; color:#1a1a1a; padding:12px 16px; background:#f8f8f8; border-radius:8px; border-left:3px solid #27ae60;">optimiser annonce Airbnb propriétaire</div>
+  </div>
+
+  <div style="background:#fff; border-radius:16px; box-shadow:0 2px 20px rgba(0,0,0,0.06); padding:24px; margin-bottom:24px;">
+    <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:#888; margin-bottom:12px;">Image suggérée</div>
+    <img src="https://images.pexels.com/photos/30628780/pexels-photo-30628780.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Image suggérée" style="width:100%; height:auto; border-radius:10px; display:block;">
+    <div style="font-size:12px; color:#aaa; margin-top:10px;">Photo : Jonathan Borba · Pexels</div>
+  </div>
+
+  <div class="instructions">
+    <h3>📋 Comment publier sur Simplebo</h3>
+    <ol class="steps">
+      <li><div class="step-num">1</div><div>Connectez-vous à votre espace <strong>Simplebo</strong> et créez un <strong>nouvel article</strong></div></li>
+      <li><div class="step-num">2</div><div>Ajoutez le <strong>titre</strong>, les <strong>tags</strong> et la <strong>catégorie</strong></div></li>
+      <li><div class="step-num">3</div><div><strong>Relisez et corrigez</strong> le texte directement dans l'aperçu ci-dessous</div></li>
+      <li><div class="step-num">4</div><div>Cliquez sur <strong>Copier l'article</strong> puis collez dans le corps de l'article (la mise en forme est conservée)</div></li>
+      <li><div class="step-num">5</div><div>Si la couleur ne passe pas, utilisez plutôt <strong>Copier le code HTML</strong> dans la section HTML de Simplebo</div></li>
+      <li><div class="step-num">6</div><div>Cliquez sur <strong>Publier</strong> ✅</div></li>
+    </ol>
+  </div>
+
+  <div class="card" style="margin-top:24px;">
+    <div class="card-header">
+      <h2><span>👀</span> Aperçu de l'article (modifiable)</h2>
+      <div style="display:flex; gap:8px; flex-wrap:wrap;">
+        <button class="btn-copy" onclick="copyRich(this)">📋 Copier l'article</button>
+        <button class="btn-copy" style="background:#888;" onclick="copyHtml(this)">&lt;/&gt; Copier le code HTML</button>
+      </div>
+    </div>
+    <div id="article-preview" class="preview" contenteditable="true"><p>Votre logement est prêt, votre annonce est en ligne… mais les réservations ne décollent pas. Le problème vient rarement du bien lui-même. Dans la majorité des cas, c'est l'annonce qui freine les voyageurs. Savoir <strong>optimiser son annonce Airbnb en tant que propriétaire</strong> fait toute la différence entre un calendrier vide et un taux de remplissage qui vous satisfait pleinement. Titre, photos, description, équipements mis en avant, compréhension de l'algorithme : chaque élément compte. Voici un guide concret pour transformer votre annonce en véritable levier de réservation.</p>
+
+<h2 style='color:#2665AE'>1️⃣ Rédiger un titre d'annonce Airbnb efficace</h2>
+
+<p>Le titre est la première chose que voient les voyageurs lorsqu'ils parcourent les résultats de recherche. Il doit donner envie de cliquer en quelques mots, tout en intégrant les informations essentielles.</p>
+
+<h3>Les ingrédients d'un bon titre</h3>
+
+<ul>
+<li><strong>Le type de logement</strong> : maison, appartement, villa, studio, mobil-home.</li>
+<li><strong>Un atout différenciant</strong> : piscine, vue mer, jardin clos, terrasse, parking privé.</li>
+<li><strong>La localisation ou la proximité</strong> : à 200 m de la plage, centre-ville, en forêt.</li>
+<li><strong>Une touche émotionnelle</strong> (facultative) : « cocon familial », « havre de paix », « nid douillet ».</li>
+</ul>
+
+<p>Un titre comme <em>« Maison avec piscine · Jardin clos · 5 min plage La Palmyre »</em> fonctionne bien mieux qu'un vague <em>« Jolie maison de vacances »</em>. L'objectif : être précis, honnête et attractif en 50 caractères maximum visibles sur mobile.</p>
+
+<h3>Erreurs fréquentes à éviter</h3>
+
+<p>Évitez les majuscules excessives, les points d'exclamation à répétition et les superlatifs vides (« le meilleur logement de la côte »). Airbnb peut pénaliser les titres jugés trompeurs, et les voyageurs expérimentés s'en méfient.</p>
+
+<h2 style='color:#2665AE'>2️⃣ 📸 Des photos d'annonce Airbnb professionnelles qui convertissent</h2>
+
+<p>Les photos sont le facteur numéro un de décision pour un voyageur. Selon <a href='https://news.airbnb.com/professional-photography/' rel='nofollow'>Airbnb</a>, les annonces avec des photos de qualité professionnelle génèrent significativement plus de réservations.</p>
+
+<h3>Les règles d'or d'un shooting réussi</h3>
+
+<ul>
+<li><strong>Lumière naturelle</strong> : photographiez en journée, rideaux ouverts, éclairages allumés pour compléter.</li>
+<li><strong>Rangement irréprochable</strong> : rien sur les plans de travail, lits faits avec soin, serviettes pliées.</li>
+<li><strong>Angles larges</strong> : utilisez un objectif grand-angle pour donner une vraie impression de volume.</li>
+<li><strong>Chaque pièce compte</strong> : cuisine, salle de bain, chambre, extérieurs. Ne négligez rien.</li>
+<li><strong>Mise en scène sobre</strong> : un bouquet de fleurs, une tasse de café sur la terrasse, une serviette roulée sur le lit. L'idée est de projeter le voyageur dans un moment agréable.</li>
+</ul>
+
+<h3>L'ordre des photos compte</h3>
+
+<p>La photo de couverture doit montrer l'atout principal du logement (piscine, vue, pièce de vie lumineuse). Les quatre suivantes doivent couvrir les espaces clés. Les voyageurs ne regardent souvent que les cinq premières images avant de décider s'ils lisent la suite ou passent à l'annonce suivante.</p>
+
+<h2 style='color:#2665AE'>3️⃣ ✍️ Rédiger une description Airbnb qui donne envie de réserver</h2>
+
+<p>La description n'est pas une simple liste d'informations. C'est un texte de vente qui doit rassurer, projeter et convaincre.</p>
+
+<h3>Structure recommandée</h3>
+
+<ul>
+<li><strong>Accroche (2-3 lignes)</strong> : résumez l'expérience en une phrase qui capte l'attention. Parlez au voyageur, pas de votre logement de manière impersonnelle.</li>
+<li><strong>Description détaillée pièce par pièce</strong> : mentionnez la literie (taille du lit, qualité du matelas), les équipements de cuisine, la salle de bain, les espaces extérieurs.</li>
+<li><strong>Le quartier et l'environnement</strong> : distances vers les points d'intérêt, commerces, plages, restaurants. C'est souvent ce qui fait la différence pour les voyageurs qui hésitent entre plusieurs logements.</li>
+<li><strong>Informations pratiques</strong> : stationnement, accès Wi-Fi, arrivée autonome via boîte à clés sécurisée.</li>
+</ul>
+
+<h3>Intégrer les mots-clés dans l'annonce Airbnb</h3>
+
+<p>L'algorithme Airbnb indexe le texte de votre annonce. Intégrer naturellement des termes que les voyageurs recherchent (« proche plage », « piscine chauffée », « idéal famille », « animaux acceptés ») améliore votre positionnement dans les résultats. Ne forcez pas les répétitions, restez fluide et authentique.</p>
+
+<h2 style='color:#2665AE'>4️⃣ 🏠 Équipements à valoriser dans votre annonce</h2>
+
+<p>Airbnb permet de cocher une longue liste d'équipements. Beaucoup de propriétaires en oublient ou n'y prêtent pas attention. Pourtant, les filtres de recherche utilisés par les voyageurs reposent directement sur ces équipements.</p>
+
+<h3>Les équipements qui font la différence</h3>
+
+<ul>
+<li><strong>Wi-Fi haut débit</strong> : indispensable, y compris en zone touristique.</li>
+<li><strong>Climatisation ou ventilateurs</strong> : critère devenu décisif en été.</li>
+<li><strong>Lave-linge et sèche-linge</strong> : très recherchés pour les séjours d'une semaine ou plus.</li>
+<li><strong>Espace de travail dédié</strong> : attire les voyageurs en télétravail.</li>
+<li><strong>Équipements bébé</strong> (lit parapluie, chaise haute) : ouvre votre logement aux familles avec enfants en bas âge.</li>
+<li><strong>Barbecue, plancha, piscine, jardin clos</strong> : des atouts majeurs en Charente-Maritime ou sur Bordeaux rive droite.</li>
+</ul>
+
+<p>Vérifiez régulièrement que tous les équipements présents dans votre logement sont bien cochés sur l'annonce. Un équipement oublié, c'est une recherche filtrée où votre logement n'apparaît pas.</p>
+
+<h2 style='color:#2665AE'>5️⃣ 🔍 Comprendre l'algorithme Airbnb pour gagner en visibilité</h2>
+
+<p>L'algorithme Airbnb détermine l'ordre dans lequel les annonces apparaissent. Comprendre ses critères, c'est se donner les moyens d'être vu par plus de voyageurs.</p>
+
+<h3>Les principaux facteurs de classement</h3>
+
+<ul>
+<li><strong>Taux de réponse et délai de réponse</strong> : répondre aux messages en moins d'une heure est un signal fort.</li>
+<li><strong>Taux d'acceptation des réservations</strong> : refuser trop de demandes fait chuter votre classement.</li>
+<li><strong>Qualité des avis</strong> : chaque note compte. Un 4,8 de moyenne ouvre des portes que 4,6 ferme.</li>
+<li><strong>Tarification compétitive et cohérente</strong> : un prix aligné sur le marché local, ajusté selon la saisonnalité, est favorisé.</li>
+<li><strong>Réservation instantanée activée</strong> : Airbnb privilégie les logements réservables sans validation manuelle.</li>
+<li><strong>Fraîcheur de l'annonce</strong> : mettre à jour régulièrement vos photos, votre description ou vos tarifs envoie un signal positif.</li>
+</ul>
+
+<h3>Le piège de l'inactivité</h3>
+
+<p>Un calendrier non mis à jour, des messages sans réponse pendant plusieurs jours, une annonce figée depuis des mois : autant de signaux qui indiquent à l'algorithme que votre logement n'est plus prioritaire. Même en basse saison, maintenez votre annonce active.</p>
+
+<h2 style='color:#2665AE'>6️⃣ 🏅 Décrocher le badge Coup de Cœur Airbnb</h2>
+
+<p>Le badge Coup de Cœur (anciennement Superhost pour les logements) est un puissant levier de conversion. Les voyageurs le repèrent instantanément et lui associent une garantie de qualité.</p>
+
+<h3>Critères principaux pour l'obtenir</h3>
+
+<ul>
+<li>Note globale de 4,9 ou plus sur l'ensemble des avis.</li>
+<li>Taux d'annulation très faible (idéalement zéro).</li>
+<li>Fiabilité de l'annonce : correspondance exacte entre les photos, la description et la réalité.</li>
+<li>Propreté irréprochable confirmée par les évaluations des voyageurs.</li>
+</ul>
+
+<p>Ce badge n'est pas décoratif. Il augmente la visibilité dans les résultats de recherche et renforce la confiance des voyageurs au moment de réserver. Pour le maintenir, chaque séjour doit offrir une expérience constante et soignée.</p>
+
+<h2 style='color:#2665AE'>7️⃣ 🤝 Pourquoi confier l'optimisation de son annonce à une conciergerie</h2>
+
+<p>Optimiser une annonce Airbnb en tant que propriétaire demande du temps, des compétences variées (rédaction, photographie, analyse tarifaire, veille algorithmique) et une régularité sans faille. C'est précisément ce que propose une conciergerie spécialisée comme <a href='/'>Dormirici</a>.</p>
+
+<p>Du shooting professionnel à la rédaction de l'annonce, en passant par le suivi des réservations sur les plateformes, la coordination des arrivées via boîte à clés et le ménage entre chaque séjour, chaque étape est prise en charge. L'objectif : vous libérer de la charge opérationnelle tout en maximisant la performance de votre annonce.</p>
+
+<p>Que votre bien soit situé aux Mathes, à La Palmyre, à Royan, à Ronce-les-Bains ou sur Bordeaux rive droite, l'accompagnement est adapté à votre zone et à votre logement.</p>
+
+<h2 style='color:#2665AE'>✅ Conclusion</h2>
+
+<p>Un titre précis, des photos soignées, une description qui projette le voyageur, des équipements correctement renseignés et une compréhension fine de l'algorithme : voilà les cinq piliers pour optimiser votre annonce Airbnb en tant que propriétaire. Chaque détail compte, et c'est l'ensemble qui transforme une annonce ordinaire en machine à réservations.</p>
+
+<p>Vous souhaitez déléguer cette optimisation à des experts locaux ? <a href='/'>Contactez Dormirici</a> pour un accompagnement complet, de la création de votre annonce au suivi quotidien de votre logement.</p>
+
+<p><span style='color:#2665AE'><strong>Astuce Dormirici</strong></span> : mettez à jour votre photo de couverture à chaque saison pour refléter l'ambiance du moment (terrasse ensoleillée en été, cheminée allumée en hiver) et envoyer un signal de fraîcheur à l'algorithme Airbnb.</p></div>
+    <div class="edit-hint">✏️ Corrigez le texte ici si besoin, puis cliquez sur « Copier l'article » et collez-le dans le corps de votre article Simplebo. La mise en forme est conservée.</div>
+  </div>
+
+  <div class="footer">
+    Généré automatiquement par Mon Site En Ligne · Ne pas partager ce lien
+  </div>
+
+</div>
+
+<script>
+function flash(btn, label) {
+  btn.innerHTML = '✅ Copié !';
+  btn.classList.add('copied');
+  setTimeout(function () { btn.innerHTML = label; btn.classList.remove('copied'); }, 3000);
+}
+
+function selectAndCopy(el) {
+  var range = document.createRange();
+  range.selectNodeContents(el);
+  var sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try { document.execCommand('copy'); } catch (e) {}
+  sel.removeAllRanges();
+}
+
+function copyRich(btn) {
+  var el = document.getElementById('article-preview');
+  var html = el.innerHTML.trim();
+  var text = el.innerText.trim();
+  if (navigator.clipboard && window.ClipboardItem) {
+    var item = new ClipboardItem({
+      'text/html': new Blob([html], { type: 'text/html' }),
+      'text/plain': new Blob([text], { type: 'text/plain' })
+    });
+    navigator.clipboard.write([item]).then(function () {
+      flash(btn, '📋 Copier l\'article');
+    }).catch(function () { selectAndCopy(el); flash(btn, '📋 Copier l\'article'); });
+  } else {
+    selectAndCopy(el);
+    flash(btn, '📋 Copier l\'article');
+  }
+}
+
+function copyHtml(btn) {
+  var html = document.getElementById('article-preview').innerHTML.trim();
+  navigator.clipboard.writeText(html).then(function () {
+    flash(btn, '&lt;/&gt; Copier le code HTML');
+  }).catch(function () {
+    var ta = document.createElement('textarea');
+    ta.value = html; document.body.appendChild(ta); ta.select();
+    document.execCommand('copy'); document.body.removeChild(ta);
+    flash(btn, '&lt;/&gt; Copier le code HTML');
+  });
+}
+</script>
+
+</body>
+</html>
