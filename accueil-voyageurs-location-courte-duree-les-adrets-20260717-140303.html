@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accueil voyageurs aux Adrets : check-in, boîte à clé et livret pour une arrivée parfaite</title>
+<style>
+  :root { --accent: #2563EB; --accent-dark: #1d4ed8; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', Arial, sans-serif; background: #f0f2f5; min-height: 100vh; padding: 40px 20px; }
+  .container { max-width: 860px; margin: 0 auto; }
+  .header { text-align: center; margin-bottom: 40px; }
+  .header .badge { display: inline-block; background: #e8f0fe; color: var(--accent); font-size: 12px; font-weight: 600; padding: 6px 16px; border-radius: 20px; margin-bottom: 16px; letter-spacing: 1px; text-transform: uppercase; }
+  .header h1 { font-size: 28px; font-weight: 700; color: #1a1a1a; line-height: 1.3; margin-bottom: 8px; }
+  .header .meta { font-size: 14px; color: #888; }
+  .card { background: #fff; border-radius: 16px; box-shadow: 0 2px 20px rgba(0,0,0,0.06); overflow: hidden; margin-bottom: 24px; }
+  .card-header { padding: 20px 24px; border-bottom: 1px solid #f0f0f0; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .card-header h2 { font-size: 15px; font-weight: 600; color: #444; display: flex; align-items: center; gap: 8px; }
+  .card-header h2 span { font-size: 18px; }
+  .btn-copy { background: var(--accent); color: #fff; border: none; padding: 10px 20px; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: background 0.2s; }
+  .btn-copy:hover { background: var(--accent-dark); }
+  .btn-copy.copied { background: #27ae60; }
+  .preview { padding: 28px 32px; font-size: 15px; line-height: 1.75; color: #2a2a2a; outline: none; }
+  .preview:focus { box-shadow: inset 0 0 0 2px #e8f0fe; }
+  .preview h2 { font-size: 20px; margin: 22px 0 10px; line-height: 1.35; }
+  .preview h3 { font-size: 17px; margin: 18px 0 8px; }
+  .preview p { margin: 0 0 14px; }
+  .preview ul { margin: 0 0 14px 20px; }
+  .preview li { margin-bottom: 6px; }
+  .preview a { color: var(--accent); }
+  .edit-hint { font-size: 12px; color: #aaa; padding: 0 32px 20px; }
+  .instructions { background: #fff; border-radius: 16px; box-shadow: 0 2px 20px rgba(0,0,0,0.06); padding: 24px; }
+  .instructions h3 { font-size: 15px; font-weight: 600; color: #444; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+  .steps { list-style: none; }
+  .steps li { display: flex; align-items: flex-start; gap: 12px; padding: 10px 0; border-bottom: 1px solid #f5f5f5; font-size: 14px; color: #555; }
+  .steps li:last-child { border-bottom: none; }
+  .step-num { background: var(--accent); color: #fff; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0; }
+  .footer { text-align: center; margin-top: 32px; font-size: 12px; color: #aaa; }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="header">
+    <div class="badge">📝 Article prêt à relire</div>
+    <h1>Accueil voyageurs aux Adrets : check-in, boîte à clé et livret pour une arrivée parfaite</h1>
+    <div class="meta">Généré automatiquement · À relire puis publier sur votre blog</div>
+  </div>
+
+  <div style="background:#fff; border-radius:16px; box-shadow:0 2px 20px rgba(0,0,0,0.06); padding:24px; margin-bottom:24px;">
+    <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:#888; margin-bottom:8px;">Titre de l'article</div>
+    <div style="font-size:16px; font-weight:700; color:#1a1a1a; margin-bottom:20px; padding:12px 16px; background:#f8f8f8; border-radius:8px; border-left:3px solid var(--accent);">Accueil voyageurs aux Adrets : check-in, boîte à clé et livret pour une arrivée parfaite</div>
+    <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:#888; margin-bottom:8px;">Tags suggérés</div>
+    <div style="font-size:14px; color:#1a1a1a; padding:12px 16px; background:#f8f8f8; border-radius:8px; border-left:3px solid #27ae60;">accueil voyageurs location courte durée Les Adrets</div>
+  </div>
+
+  <div style="background:#fff; border-radius:16px; box-shadow:0 2px 20px rgba(0,0,0,0.06); padding:24px; margin-bottom:24px;">
+    <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:#888; margin-bottom:12px;">Image suggérée</div>
+    <img src="https://images.pexels.com/photos/12422459/pexels-photo-12422459.jpeg?auto=compress&cs=tinysrgb&h=650&w=940&fm=jpg&dl=image.jpg" alt="Image suggérée" style="width:100%; height:auto; border-radius:10px; display:block;">
+    <div style="font-size:12px; color:#aaa; margin-top:10px;">Photo : Alexey Demidov · Pexels</div>
+  </div>
+
+  <div class="instructions">
+    <h3>📋 Comment publier sur Simplebo</h3>
+
+    <a href="https://www.loom.com/share/cbcd3f9580ef46e5ad5c27c18b121676" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:8px; background:var(--accent, #2563EB); color:#fff; text-decoration:none; padding:11px 20px; border-radius:8px; font-size:14px; font-weight:600; margin-bottom:16px;">▶️ Voir le tutoriel vidéo</a>
+
+    <ol class="steps">
+      <li><div class="step-num">1</div><div>Connectez-vous à votre espace <strong>Simplebo</strong> et créez un <strong>nouvel article</strong></div></li>
+      <li><div class="step-num">2</div><div>Ajoutez le <strong>titre</strong>, les <strong>tags</strong> et la <strong>catégorie</strong></div></li>
+      <li><div class="step-num">3</div><div><strong>Relisez et corrigez</strong> le texte directement dans l'aperçu ci-dessous</div></li>
+      <li><div class="step-num">4</div><div>Cliquez sur <strong>Copier l'article</strong> puis collez dans le corps de l'article (la mise en forme est conservée)</div></li>
+      <li><div class="step-num">5</div><div>Si la couleur ne passe pas, utilisez plutôt <strong>Copier le code HTML</strong> dans la section HTML de Simplebo</div></li>
+      <li><div class="step-num">6</div><div>Cliquez sur <strong>Publier</strong> ✅</div></li>
+    </ol>
+  </div>
+
+  <div class="card" style="margin-top:24px;">
+    <div class="card-header">
+      <h2><span>👀</span> Aperçu de l'article (modifiable)</h2>
+      <div style="display:flex; gap:8px; flex-wrap:wrap;">
+        <button class="btn-copy" onclick="copyRich(this)">📋 Copier l'article</button>
+        <button class="btn-copy" style="background:#888;" onclick="copyHtml(this)">&lt;/&gt; Copier le code HTML</button>
+      </div>
+    </div>
+    <div id="article-preview" class="preview" contenteditable="true"><p>Aux Adrets de l'Estérel, chaque séjour commence par un moment décisif : l'arrivée. L'<strong>accueil voyageurs en location courte durée aux Adrets</strong> conditionne l'ensemble de l'expérience. Un check-in fluide, une boîte à clé bien positionnée, un livret d'accueil clair et chaleureux : ces détails transforment un simple hébergement en souvenir mémorable. Que vous receviez des familles en quête de calme ou des couples attirés par le massif de l'Estérel, soigner cette première impression reste la clé d'un avis cinq étoiles.</p>
+
+<h2>Pourquoi l'accueil voyageurs fait toute la différence aux Adrets</h2>
+
+<p>Les Adrets de l'Estérel attirent des voyageurs en quête d'authenticité, à quelques minutes seulement des plages de la Côte d'Azur. Beaucoup arrivent après un long trajet, parfois en soirée, souvent fatigués. Le premier contact avec le logement doit immédiatement rassurer et séduire.</p>
+
+<p>Un accueil personnalisé en location saisonnière ne se résume pas à remettre une clé. Il s'agit de créer une atmosphère, de transmettre les bonnes informations au bon moment et de montrer au voyageur qu'il est attendu. Sur un marché où la concurrence entre annonces Airbnb et Booking s'intensifie chaque saison, cette attention distingue les logements qui fidélisent de ceux qui stagnent.</p>
+
+<h2>Check-in physique ou autonome : quelle formule choisir ?</h2>
+
+<h3>Le check-in en personne, pour un accueil sur mesure</h3>
+
+<p>Accueillir le voyageur en personne reste la formule la plus chaleureuse. Elle permet de présenter le logement, d'expliquer le fonctionnement des équipements et de partager quelques recommandations locales. Aux Adrets, un conseil sur le sentier du pic de l'Ours ou l'adresse d'un restaurant familial au village fait souvent mouche.</p>
+
+<p>Cette approche convient parfaitement lorsque les horaires d'arrivée sont prévisibles et que le propriétaire ou son prestataire habite à proximité. Elle humanise l'expérience et facilite les échanges en cas de question.</p>
+
+<h3>Le check-in autonome, pour la flexibilité totale</h3>
+
+<p>Tous les voyageurs n'arrivent pas à 16 heures. Vols retardés, embouteillages sur l'A8, correspondances manquées : les imprévus sont fréquents. Le check-in autonome en location vacances répond à cette réalité. Grâce à une boîte à clé sécurisée ou une serrure connectée, le voyageur accède au logement quand il arrive, sans stress ni contrainte horaire.</p>
+
+<p>Cette solution est particulièrement précieuse pour les propriétaires qui vivent loin de leur bien ou qui proposent plusieurs logements simultanément.</p>
+
+<h2>Boîte à clé sécurisée : bien la choisir et bien la positionner</h2>
+
+<p>La boîte à clé sécurisée Airbnb est devenue un standard de la location courte durée. Encore faut-il respecter quelques règles pour qu'elle remplisse son rôle sans compromettre la sécurité du logement.</p>
+
+<ul>
+<li><strong>Solidité du boîtier :</strong> privilégier un modèle homologué, résistant aux intempéries et aux tentatives d'effraction. Les marques comme <a href='https://www.masterlock.com/fr-fr' rel='nofollow'>Master Lock</a> proposent des références éprouvées.</li>
+<li><strong>Emplacement discret :</strong> fixer la boîte dans un endroit accessible mais peu visible depuis la voie publique. Un pilier de portail, un mur latéral ou un local technique conviennent bien.</li>
+<li><strong>Code renouvelé :</strong> changer le code entre chaque réservation. Un code unique par séjour limite les risques d'accès non autorisé.</li>
+<li><strong>Instructions précises :</strong> envoyer au voyageur un message clair avec la localisation exacte de la boîte, le code et la marche à suivre, idéalement accompagné d'une photo.</li>
+</ul>
+
+<p>Pour les arrivées tardives en location vacances, un éclairage extérieur automatique facilite considérablement la recherche de la boîte à clé dans l'obscurité. Un détail simple, mais qui évite bien des appels en pleine nuit.</p>
+
+<h2>Le livret d'accueil numérique : l'allié indispensable</h2>
+
+<p>Le livret d'accueil numérique pour voyageurs remplace avantageusement le classeur plastifié oublié dans un tiroir. Accessible sur smartphone dès la confirmation de réservation, il centralise toutes les informations utiles au séjour.</p>
+
+<h3>Que contenir dans un livret d'accueil efficace ?</h3>
+
+<ul>
+<li>Les modalités d'accès au logement, étape par étape</li>
+<li>Le fonctionnement des équipements : climatisation, Wi-Fi, volets électriques, barbecue</li>
+<li>Les consignes de tri et de sortie des poubelles</li>
+<li>Les coordonnées d'un contact en cas d'urgence</li>
+<li>Une sélection de restaurants, marchés et activités autour des Adrets et de l'Estérel</li>
+<li>Les horaires et règles du check-out</li>
+</ul>
+
+<p>Un livret bien conçu réduit considérablement le nombre de messages échangés avec le voyageur. Il anticipe les questions récurrentes, valorise le logement et montre un niveau de préparation professionnel. Les voyageurs apprécient particulièrement les recommandations locales authentiques, celles qu'un habitant partagerait naturellement.</p>
+
+<h3>Format et diffusion</h3>
+
+<p>Un simple PDF envoyé par messagerie fonctionne, mais des outils dédiés comme Touchstay ou Hostfully offrent une présentation plus soignée avec navigation interactive. Le lien peut être intégré au message de pré-arrivée envoyé 24 à 48 heures avant le check-in.</p>
+
+<h2>Coordonner l'accueil quand on est propriétaire à distance</h2>
+
+<p>Beaucoup de propriétaires aux Adrets ne résident pas sur place. Certains vivent à Paris, Lyon ou même à l'étranger. Assurer un accueil impeccable à chaque arrivée, week-end compris, relève alors du défi logistique.</p>
+
+<p>Faire appel à une conciergerie locale spécialisée en location courte durée permet de déléguer l'ensemble du processus d'arrivée : préparation du logement, vérification des équipements, mise en place du linge, coordination du check-in et suivi du voyageur tout au long du séjour. Le propriétaire conserve la maîtrise de son bien tout en offrant une qualité d'accueil constante.</p>
+
+<p><a href='/'>Hôte Sérénités</a> accompagne les propriétaires des Adrets de l'Estérel, de Mandelieu-La-Napoule et de Théoule-sur-Mer dans cette démarche, avec une approche à la fois rigoureuse et attentionnée.</p>
+
+<h2>Les erreurs fréquentes à éviter lors du check-in</h2>
+
+<ul>
+<li><strong>Des instructions d'accès envoyées trop tard :</strong> le voyageur doit recevoir toutes les informations au moins 24 heures avant son arrivée.</li>
+<li><strong>Un logement pas tout à fait prêt :</strong> une poubelle pleine, un lit défait ou une salle de bain mal nettoyée ruine instantanément la première impression.</li>
+<li><strong>L'absence de petit geste d'attention :</strong> une bouteille d'eau fraîche, un mot manuscrit de bienvenue ou quelques produits locaux suffisent à créer un effet « waouh » sans investissement excessif.</li>
+<li><strong>Aucun moyen de contact en cas de problème :</strong> même avec un check-in autonome, le voyageur doit pouvoir joindre quelqu'un rapidement.</li>
+</ul>
+
+<h2>Soigner l'accueil pour maximiser les avis positifs</h2>
+
+<p>Sur Airbnb comme sur Booking, la note d'arrivée pèse lourd dans l'algorithme de classement. Un voyageur bien accueilli aux Adrets laissera naturellement un commentaire élogieux, mentionnera la facilité du check-in et la qualité du livret. Ces retours positifs attirent de nouvelles réservations et permettent progressivement d'augmenter le tarif par nuit.</p>
+
+<p>L'accueil voyageurs en location courte durée aux Adrets n'est pas un simple aspect logistique. C'est un levier de performance, un vecteur de différenciation et, avant tout, une marque de respect envers ceux qui choisissent votre logement pour leurs vacances sur la Côte d'Azur.</p>
+
+<p>Vous souhaitez offrir à vos voyageurs une arrivée irréprochable sans vous en occuper au quotidien ? <a href='/'>Contactez Hôte Sérénités</a> pour découvrir un accompagnement sur mesure, pensé pour les propriétaires exigeants des Adrets et de l'Estérel.</p></div>
+    <div class="edit-hint">✏️ Corrigez le texte ici si besoin, puis cliquez sur « Copier l'article » et collez-le dans le corps de votre article Simplebo. La mise en forme est conservée.</div>
+  </div>
+
+  <div class="footer">
+    Généré automatiquement par Mon Site En Ligne · Ne pas partager ce lien
+  </div>
+
+</div>
+
+<script>
+function flash(btn, label) {
+  btn.innerHTML = '✅ Copié !';
+  btn.classList.add('copied');
+  setTimeout(function () { btn.innerHTML = label; btn.classList.remove('copied'); }, 3000);
+}
+
+function selectAndCopy(el) {
+  var range = document.createRange();
+  range.selectNodeContents(el);
+  var sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try { document.execCommand('copy'); } catch (e) {}
+  sel.removeAllRanges();
+}
+
+function copyRich(btn) {
+  var el = document.getElementById('article-preview');
+  var html = el.innerHTML.trim();
+  var text = el.innerText.trim();
+  if (navigator.clipboard && window.ClipboardItem) {
+    var item = new ClipboardItem({
+      'text/html': new Blob([html], { type: 'text/html' }),
+      'text/plain': new Blob([text], { type: 'text/plain' })
+    });
+    navigator.clipboard.write([item]).then(function () {
+      flash(btn, '📋 Copier l\'article');
+    }).catch(function () { selectAndCopy(el); flash(btn, '📋 Copier l\'article'); });
+  } else {
+    selectAndCopy(el);
+    flash(btn, '📋 Copier l\'article');
+  }
+}
+
+function copyHtml(btn) {
+  var html = document.getElementById('article-preview').innerHTML.trim();
+  navigator.clipboard.writeText(html).then(function () {
+    flash(btn, '&lt;/&gt; Copier le code HTML');
+  }).catch(function () {
+    var ta = document.createElement('textarea');
+    ta.value = html; document.body.appendChild(ta); ta.select();
+    document.execCommand('copy'); document.body.removeChild(ta);
+    flash(btn, '&lt;/&gt; Copier le code HTML');
+  });
+}
+</script>
+
+</body>
+</html>
