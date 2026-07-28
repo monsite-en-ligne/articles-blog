@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Check-in automatique et serrure connectée Airbnb : le guide complet pour propriétaires</title>
+<style>
+  :root { --accent: #2563EB; --accent-dark: #1d4ed8; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', Arial, sans-serif; background: #f0f2f5; min-height: 100vh; padding: 40px 20px; }
+  .container { max-width: 860px; margin: 0 auto; }
+  .header { text-align: center; margin-bottom: 40px; }
+  .header .badge { display: inline-block; background: #e8f0fe; color: var(--accent); font-size: 12px; font-weight: 600; padding: 6px 16px; border-radius: 20px; margin-bottom: 16px; letter-spacing: 1px; text-transform: uppercase; }
+  .header h1 { font-size: 28px; font-weight: 700; color: #1a1a1a; line-height: 1.3; margin-bottom: 8px; }
+  .header .meta { font-size: 14px; color: #888; }
+  .card { background: #fff; border-radius: 16px; box-shadow: 0 2px 20px rgba(0,0,0,0.06); overflow: hidden; margin-bottom: 24px; }
+  .card-header { padding: 20px 24px; border-bottom: 1px solid #f0f0f0; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .card-header h2 { font-size: 15px; font-weight: 600; color: #444; display: flex; align-items: center; gap: 8px; }
+  .card-header h2 span { font-size: 18px; }
+  .btn-copy { background: var(--accent); color: #fff; border: none; padding: 10px 20px; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: background 0.2s; }
+  .btn-copy:hover { background: var(--accent-dark); }
+  .btn-copy.copied { background: #27ae60; }
+  .preview { padding: 28px 32px; font-size: 15px; line-height: 1.75; color: #2a2a2a; outline: none; }
+  .preview:focus { box-shadow: inset 0 0 0 2px #e8f0fe; }
+  .preview h2 { font-size: 20px; margin: 22px 0 10px; line-height: 1.35; }
+  .preview h3 { font-size: 17px; margin: 18px 0 8px; }
+  .preview p { margin: 0 0 14px; }
+  .preview ul { margin: 0 0 14px 20px; }
+  .preview li { margin-bottom: 6px; }
+  .preview a { color: var(--accent); }
+  .edit-hint { font-size: 12px; color: #aaa; padding: 0 32px 20px; }
+  .instructions { background: #fff; border-radius: 16px; box-shadow: 0 2px 20px rgba(0,0,0,0.06); padding: 24px; }
+  .instructions h3 { font-size: 15px; font-weight: 600; color: #444; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+  .steps { list-style: none; }
+  .steps li { display: flex; align-items: flex-start; gap: 12px; padding: 10px 0; border-bottom: 1px solid #f5f5f5; font-size: 14px; color: #555; }
+  .steps li:last-child { border-bottom: none; }
+  .step-num { background: var(--accent); color: #fff; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0; }
+  .footer { text-align: center; margin-top: 32px; font-size: 12px; color: #aaa; }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="header">
+    <div class="badge">📝 Article prêt à relire</div>
+    <h1>Check-in automatique et serrure connectée Airbnb : le guide complet pour propriétaires</h1>
+    <div class="meta">Généré automatiquement · À relire puis publier sur votre blog</div>
+  </div>
+
+  <div style="background:#fff; border-radius:16px; box-shadow:0 2px 20px rgba(0,0,0,0.06); padding:24px; margin-bottom:24px;">
+    <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:#888; margin-bottom:8px;">Titre de l'article</div>
+    <div style="font-size:16px; font-weight:700; color:#1a1a1a; margin-bottom:20px; padding:12px 16px; background:#f8f8f8; border-radius:8px; border-left:3px solid var(--accent);">Check-in automatique et serrure connectée Airbnb : le guide complet pour propriétaires</div>
+    <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:#888; margin-bottom:8px;">Tags suggérés</div>
+    <div style="font-size:14px; color:#1a1a1a; padding:12px 16px; background:#f8f8f8; border-radius:8px; border-left:3px solid #27ae60;">check-in automatique serrure connectée Airbnb</div>
+  </div>
+
+  <div style="background:#fff; border-radius:16px; box-shadow:0 2px 20px rgba(0,0,0,0.06); padding:24px; margin-bottom:24px;">
+    <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:#888; margin-bottom:12px;">Image suggérée</div>
+    <img src="https://images.pexels.com/photos/15049671/pexels-photo-15049671.jpeg?auto=compress&cs=tinysrgb&h=650&w=940&fm=jpg&dl=image.jpg" alt="Image suggérée" style="width:100%; height:auto; border-radius:10px; display:block;">
+    <div style="font-size:12px; color:#aaa; margin-top:10px;">Photo : Connor Scott McManus · Pexels</div>
+  </div>
+
+  <div class="instructions">
+    <h3>📋 Comment publier sur Simplebo</h3>
+
+    <a href="https://www.loom.com/share/cbcd3f9580ef46e5ad5c27c18b121676" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:8px; background:var(--accent, #2563EB); color:#fff; text-decoration:none; padding:11px 20px; border-radius:8px; font-size:14px; font-weight:600; margin-bottom:16px;">▶️ Voir le tutoriel vidéo</a>
+
+    <ol class="steps">
+      <li><div class="step-num">1</div><div>Connectez-vous à votre espace <strong>Simplebo</strong> et créez un <strong>nouvel article</strong></div></li>
+      <li><div class="step-num">2</div><div>Ajoutez le <strong>titre</strong>, les <strong>tags</strong> et la <strong>catégorie</strong></div></li>
+      <li><div class="step-num">3</div><div><strong>Relisez et corrigez</strong> le texte directement dans l'aperçu ci-dessous</div></li>
+      <li><div class="step-num">4</div><div>Cliquez sur <strong>Copier l'article</strong> puis collez dans le corps de l'article (la mise en forme est conservée)</div></li>
+      <li><div class="step-num">5</div><div>Si la couleur ne passe pas, utilisez plutôt <strong>Copier le code HTML</strong> dans la section HTML de Simplebo</div></li>
+      <li><div class="step-num">6</div><div>Cliquez sur <strong>Publier</strong> ✅</div></li>
+    </ol>
+  </div>
+
+  <div class="card" style="margin-top:24px;">
+    <div class="card-header">
+      <h2><span>👀</span> Aperçu de l'article (modifiable)</h2>
+      <div style="display:flex; gap:8px; flex-wrap:wrap;">
+        <button class="btn-copy" onclick="copyRich(this)">📋 Copier l'article</button>
+        <button class="btn-copy" style="background:#888;" onclick="copyHtml(this)">&lt;/&gt; Copier le code HTML</button>
+      </div>
+    </div>
+    <div id="article-preview" class="preview" contenteditable="true"><p>Installer un <strong>check-in automatique avec serrure connectée Airbnb</strong> transforme radicalement l'expérience d'accueil en location courte durée. Fini les allers-retours pour remettre les clés, les coordinations stressantes avec des voyageurs dont le vol a du retard, ou les appels à 23 heures pour un trousseau égaré. Ce système permet un accueil autonome du voyageur, une flexibilité totale sur les horaires d'arrivée et une sécurité renforcée pour votre logement. Que vous possédiez un appartement à Vincennes, une maison à Bry-sur-Marne ou un studio à Nogent-sur-Marne, ce guide vous explique concrètement comment mettre en place cette solution et en tirer le meilleur parti.</p>
+
+<h2>Pourquoi passer au check-in automatique en location courte durée ?</h2>
+
+<p>L'arrivée autonome est devenue un standard attendu par les voyageurs sur Airbnb et Booking. Selon une étude relayée par <a href='https://www.airbnb.fr/' rel='nofollow'>Airbnb</a>, les annonces proposant un check-in sans contact obtiennent de meilleures évaluations et un taux de conversion supérieur. Les raisons sont simples à comprendre.</p>
+
+<h3>Un confort apprécié par les voyageurs</h3>
+
+<p>Les touristes qui atterrissent à Orly ou Roissy après un long vol ne veulent pas attendre un rendez-vous fixe pour récupérer des clés. Les professionnels en déplacement apprécient de pouvoir arriver tard sans contrainte. Un code d'accès unique envoyé avant le séjour résout ces problèmes en quelques secondes.</p>
+
+<h3>Un gain de temps considérable pour les propriétaires</h3>
+
+<p>Chaque remise de clés en personne mobilise entre 30 minutes et une heure. Multipliez cela par le nombre de rotations mensuelles et le calcul parle de lui-même. Avec une serrure connectée, vous supprimez cette contrainte tout en conservant un contrôle total sur les accès à votre logement.</p>
+
+<h3>Une sécurité renforcée</h3>
+
+<ul>
+<li>Chaque voyageur reçoit un code temporaire valable uniquement pendant la durée de son séjour.</li>
+<li>Plus de risque de clés perdues, dupliquées ou non restituées.</li>
+<li>Un historique des entrées et sorties est consultable à tout moment depuis votre téléphone.</li>
+<li>Vous pouvez révoquer un accès instantanément en cas de besoin.</li>
+</ul>
+
+<h2>Comment choisir sa serrure connectée pour la location courte durée</h2>
+
+<p>Toutes les serrures connectées ne se valent pas. Pour un usage intensif en location saisonnière, plusieurs critères méritent votre attention avant d'investir.</p>
+
+<h3>Compatibilité avec votre porte</h3>
+
+<p>Les serrures connectées se déclinent en deux grandes familles. Les modèles qui remplacent entièrement le cylindre existant offrent une intégration robuste. Ceux qui se posent par-dessus le verrou actuel (type Nuki ou Igloohome) sont plus simples à installer, notamment dans un appartement en copropriété où le remplacement du barillet peut être encadré par le règlement.</p>
+
+<h3>Mode de transmission des codes</h3>
+
+<p>Privilégiez un modèle capable de générer des codes d'accès uniques pour chaque réservation. Les meilleures solutions permettent une synchronisation directe avec les plateformes de réservation, ce qui évite toute intervention manuelle. Certains modèles fonctionnent via Bluetooth, d'autres via Wi-Fi ou un bridge dédié. La connexion Wi-Fi reste la plus pratique pour un suivi à distance en temps réel.</p>
+
+<h3>Autonomie et fiabilité</h3>
+
+<p>Une serrure à piles doit offrir une autonomie de plusieurs mois. Vérifiez que le modèle envoie une alerte lorsque le niveau de batterie devient faible. Un dysfonctionnement le jour d'une arrivée serait catastrophique pour votre réputation. Optez pour des marques reconnues dans le secteur de la location courte durée.</p>
+
+<h3>Les modèles les plus utilisés par les propriétaires</h3>
+
+<ul>
+<li><strong>Nuki Smart Lock :</strong> installation sans perçage, compatible avec la plupart des cylindres européens, application intuitive.</li>
+<li><strong>Igloohome :</strong> fonctionne sans Wi-Fi grâce à un système de codes hors ligne synchronisés par algorithme.</li>
+<li><strong>Yale Linus :</strong> design discret, intégration avec les principaux assistants domotiques.</li>
+<li><strong>Keypado :</strong> solution française avec clavier à code intégré, pensée spécifiquement pour la location saisonnière.</li>
+</ul>
+
+<h2>Mettre en place le check-in automatique : étape par étape</h2>
+
+<p>La mise en œuvre est plus accessible qu'on ne l'imagine. Voici la marche à suivre pour un déploiement efficace.</p>
+
+<h3>Étape 1 : Installer la serrure connectée</h3>
+
+<p>La plupart des modèles ne nécessitent pas de faire appel à un serrurier. L'installation prend généralement entre 15 et 30 minutes. Si votre logement se trouve dans une copropriété, vérifiez au préalable que le règlement intérieur n'impose pas de contrainte particulière sur les équipements de porte.</p>
+
+<h3>Étape 2 : Configurer la génération automatique de codes</h3>
+
+<p>Reliez votre serrure à un logiciel de coordination des réservations (channel manager) ou directement à l'application du fabricant. L'objectif est de créer un code d'accès unique pour chaque location saisonnière, avec une plage horaire d'activation correspondant exactement aux dates du séjour. Cette automatisation élimine tout risque d'oubli.</p>
+
+<h3>Étape 3 : Préparer les instructions d'arrivée</h3>
+
+<p>Rédigez un message clair que vous enverrez à chaque voyageur 24 heures avant son arrivée. Ce message doit contenir le code, les instructions précises pour localiser la serrure, et un contact d'urgence. Sur Airbnb, vous pouvez automatiser cet envoi grâce aux messages programmés.</p>
+
+<h3>Étape 4 : Prévoir une solution de secours</h3>
+
+<p>Même avec la meilleure technologie, un plan B reste indispensable. Placez un jeu de clés physiques dans une boîte à clés sécurisée à proximité, ou confiez-en un à un voisin de confiance. Cette précaution vous épargnera bien des situations délicates.</p>
+
+<h2>Automatisation du logement Airbnb : aller plus loin que la serrure</h2>
+
+<p>Le check-in sans contact n'est qu'une brique d'un dispositif plus large. Pour offrir une expérience véritablement fluide à vos voyageurs, plusieurs équipements complémentaires méritent d'être envisagés.</p>
+
+<ul>
+<li><strong>Thermostat connecté :</strong> programmez le chauffage ou la climatisation pour qu'il s'active automatiquement avant l'arrivée du voyageur.</li>
+<li><strong>Éclairage intelligent :</strong> un logement éclairé à l'arrivée crée une première impression chaleureuse.</li>
+<li><strong>Détecteur de bruit :</strong> des appareils comme Minut surveillent le niveau sonore sans enregistrer les conversations, ce qui protège votre logement contre les nuisances tout en respectant la vie privée.</li>
+<li><strong>Guide numérique :</strong> un livret d'accueil digital accessible par QR code, contenant les informations pratiques, les recommandations locales et les consignes de départ.</li>
+</ul>
+
+<p>Cette automatisation globale améliore la satisfaction des voyageurs, réduit les sollicitations et contribue directement à l'obtention de meilleures notes sur les plateformes.</p>
+
+<h2>Les erreurs à éviter avec le check-in automatique et la serrure connectée Airbnb</h2>
+
+<p>L'enthousiasme pour la technologie ne doit pas faire oublier quelques pièges fréquents.</p>
+
+<ul>
+<li><strong>Négliger les instructions :</strong> un code sans explication claire génère des appels anxieux. Accompagnez toujours le code de photos ou d'une courte vidéo montrant la manipulation.</li>
+<li><strong>Oublier de changer les codes :</strong> si vous n'utilisez pas de système automatisé, le même code partagé entre plusieurs voyageurs pose un problème de sécurité évident.</li>
+<li><strong>Ignorer l'entretien :</strong> vérifiez régulièrement l'état des piles, le bon fonctionnement du mécanisme et la connexion réseau.</li>
+<li><strong>Supprimer tout contact humain :</strong> l'accueil autonome ne signifie pas l'absence totale de relation. Un message personnalisé, une disponibilité par téléphone et une attention aux détails font toute la différence dans les évaluations.</li>
+</ul>
+
+<h2>Confier l'accueil de vos voyageurs à des professionnels</h2>
+
+<p>Installer une serrure connectée est un excellent premier pas. Mais coordonner l'ensemble du processus (préparation du logement, ménage entre deux séjours, communication avec les voyageurs, maintenance des équipements) demande du temps et de la rigueur. C'est précisément ce type d'accompagnement opérationnel que propose <a href='/'>GB Conciergerie</a> aux propriétaires du Val-de-Marne.</p>
+
+<p>De la mise en place du check-in automatique à l'optimisation de votre annonce, en passant par le suivi des réservations et la coordination des arrivées, chaque étape est prise en charge pour vous permettre de profiter des revenus de votre logement sans les contraintes du quotidien.</p>
+
+<p>Vous possédez un bien à Bry-sur-Marne, Vincennes, Nogent-sur-Marne ou Le Perreux-sur-Marne et vous souhaitez franchir le cap de l'automatisation ? Contactez GB Conciergerie pour un échange personnalisé et découvrez comment transformer votre logement en une expérience d'accueil irréprochable.</p></div>
+    <div class="edit-hint">✏️ Corrigez le texte ici si besoin, puis cliquez sur « Copier l'article » et collez-le dans le corps de votre article Simplebo. La mise en forme est conservée.</div>
+  </div>
+
+  <div class="footer">
+    Généré automatiquement par Mon Site En Ligne · Ne pas partager ce lien
+  </div>
+
+</div>
+
+<script>
+function flash(btn, label) {
+  btn.innerHTML = '✅ Copié !';
+  btn.classList.add('copied');
+  setTimeout(function () { btn.innerHTML = label; btn.classList.remove('copied'); }, 3000);
+}
+
+function selectAndCopy(el) {
+  var range = document.createRange();
+  range.selectNodeContents(el);
+  var sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try { document.execCommand('copy'); } catch (e) {}
+  sel.removeAllRanges();
+}
+
+function copyRich(btn) {
+  var el = document.getElementById('article-preview');
+  var html = el.innerHTML.trim();
+  var text = el.innerText.trim();
+  if (navigator.clipboard && window.ClipboardItem) {
+    var item = new ClipboardItem({
+      'text/html': new Blob([html], { type: 'text/html' }),
+      'text/plain': new Blob([text], { type: 'text/plain' })
+    });
+    navigator.clipboard.write([item]).then(function () {
+      flash(btn, '📋 Copier l\'article');
+    }).catch(function () { selectAndCopy(el); flash(btn, '📋 Copier l\'article'); });
+  } else {
+    selectAndCopy(el);
+    flash(btn, '📋 Copier l\'article');
+  }
+}
+
+function copyHtml(btn) {
+  var html = document.getElementById('article-preview').innerHTML.trim();
+  navigator.clipboard.writeText(html).then(function () {
+    flash(btn, '&lt;/&gt; Copier le code HTML');
+  }).catch(function () {
+    var ta = document.createElement('textarea');
+    ta.value = html; document.body.appendChild(ta); ta.select();
+    document.execCommand('copy'); document.body.removeChild(ta);
+    flash(btn, '&lt;/&gt; Copier le code HTML');
+  });
+}
+</script>
+
+</body>
+</html>
