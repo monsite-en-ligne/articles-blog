@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quel logiciel de tarification dynamique choisir pour votre location courte durée ?</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', Arial, sans-serif; background: #f0f2f5; min-height: 100vh; padding: 40px 20px; }
+  .container { max-width: 860px; margin: 0 auto; }
+  .header { text-align: center; margin-bottom: 40px; }
+  .header .badge { display: inline-block; background: #e8f4fd; color: #2665AE; font-size: 12px; font-weight: 600; padding: 6px 16px; border-radius: 20px; margin-bottom: 16px; letter-spacing: 1px; text-transform: uppercase; }
+  .header h1 { font-size: 28px; font-weight: 700; color: #1a1a1a; line-height: 1.3; margin-bottom: 8px; }
+  .header .meta { font-size: 14px; color: #888; }
+  .card { background: #fff; border-radius: 16px; box-shadow: 0 2px 20px rgba(0,0,0,0.06); overflow: hidden; margin-bottom: 24px; }
+  .card-header { padding: 20px 24px; border-bottom: 1px solid #f0f0f0; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .card-header h2 { font-size: 15px; font-weight: 600; color: #444; display: flex; align-items: center; gap: 8px; }
+  .card-header h2 span { font-size: 18px; }
+  .btn-copy { background: #2665AE; color: #fff; border: none; padding: 10px 20px; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: background 0.2s; }
+  .btn-copy:hover { background: #1d4f87; }
+  .btn-copy.copied { background: #27ae60; }
+  .preview { padding: 28px 32px; font-size: 15px; line-height: 1.75; color: #2a2a2a; outline: none; }
+  .preview:focus { box-shadow: inset 0 0 0 2px #e8f4fd; }
+  .preview h2 { font-size: 20px; margin: 22px 0 10px; line-height: 1.35; }
+  .preview h3 { font-size: 17px; margin: 18px 0 8px; }
+  .preview p { margin: 0 0 14px; }
+  .preview ul { margin: 0 0 14px 20px; }
+  .preview li { margin-bottom: 6px; }
+  .preview a { color: #2665AE; }
+  .edit-hint { font-size: 12px; color: #aaa; padding: 0 32px 20px; }
+  .instructions { background: #fff; border-radius: 16px; box-shadow: 0 2px 20px rgba(0,0,0,0.06); padding: 24px; }
+  .instructions h3 { font-size: 15px; font-weight: 600; color: #444; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+  .steps { list-style: none; }
+  .steps li { display: flex; align-items: flex-start; gap: 12px; padding: 10px 0; border-bottom: 1px solid #f5f5f5; font-size: 14px; color: #555; }
+  .steps li:last-child { border-bottom: none; }
+  .step-num { background: #2665AE; color: #fff; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0; }
+  .footer { text-align: center; margin-top: 32px; font-size: 12px; color: #aaa; }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="header">
+    <div class="badge">📝 Article prêt à relire</div>
+    <h1>Quel logiciel de tarification dynamique choisir pour votre location courte durée ?</h1>
+    <div class="meta">Généré automatiquement · À relire puis publier sur votre blog</div>
+  </div>
+
+  <div style="background:#fff; border-radius:16px; box-shadow:0 2px 20px rgba(0,0,0,0.06); padding:24px; margin-bottom:24px;">
+    <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:#888; margin-bottom:8px;">Titre de l'article</div>
+    <div style="font-size:16px; font-weight:700; color:#1a1a1a; margin-bottom:20px; padding:12px 16px; background:#f8f8f8; border-radius:8px; border-left:3px solid #2665AE;">Quel logiciel de tarification dynamique choisir pour votre location courte durée ?</div>
+    <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:#888; margin-bottom:8px;">Tags suggérés</div>
+    <div style="font-size:14px; color:#1a1a1a; padding:12px 16px; background:#f8f8f8; border-radius:8px; border-left:3px solid #27ae60;">tarification dynamique location courte durée</div>
+  </div>
+
+  <div style="background:#fff; border-radius:16px; box-shadow:0 2px 20px rgba(0,0,0,0.06); padding:24px; margin-bottom:24px;">
+    <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:#888; margin-bottom:12px;">Image suggérée</div>
+    <img src="https://images.pexels.com/photos/32986723/pexels-photo-32986723.jpeg?auto=compress&cs=tinysrgb&h=650&w=940&fm=jpg&dl=image.jpg" alt="Image suggérée" style="width:100%; height:auto; border-radius:10px; display:block;">
+    <div style="font-size:12px; color:#aaa; margin-top:10px;">Photo : Adriana Beckova · Pexels</div>
+  </div>
+
+  <div class="instructions">
+    <h3>📋 Comment publier sur Simplebo</h3>
+    <ol class="steps">
+      <li><div class="step-num">1</div><div>Connectez-vous à votre espace <strong>Simplebo</strong> et créez un <strong>nouvel article</strong></div></li>
+      <li><div class="step-num">2</div><div>Ajoutez le <strong>titre</strong>, les <strong>tags</strong> et la <strong>catégorie</strong></div></li>
+      <li><div class="step-num">3</div><div><strong>Relisez et corrigez</strong> le texte directement dans l'aperçu ci-dessous</div></li>
+      <li><div class="step-num">4</div><div>Cliquez sur <strong>Copier l'article</strong> puis collez dans le corps de l'article (la mise en forme est conservée)</div></li>
+      <li><div class="step-num">5</div><div>Si la couleur ne passe pas, utilisez plutôt <strong>Copier le code HTML</strong> dans la section HTML de Simplebo</div></li>
+      <li><div class="step-num">6</div><div>Cliquez sur <strong>Publier</strong> ✅</div></li>
+    </ol>
+  </div>
+
+  <div class="card" style="margin-top:24px;">
+    <div class="card-header">
+      <h2><span>👀</span> Aperçu de l'article (modifiable)</h2>
+      <div style="display:flex; gap:8px; flex-wrap:wrap;">
+        <button class="btn-copy" onclick="copyRich(this)">📋 Copier l'article</button>
+        <button class="btn-copy" style="background:#888;" onclick="copyHtml(this)">&lt;/&gt; Copier le code HTML</button>
+      </div>
+    </div>
+    <div id="article-preview" class="preview" contenteditable="true"><p>Choisir le bon logiciel de <strong>tarification dynamique location courte durée</strong> peut transformer la performance de votre bien. Entre les outils qui ajustent les prix selon la demande, ceux qui analysent la concurrence locale et ceux qui intègrent la saisonnalité tarifaire, l'offre est dense. Pourtant, tous ne se valent pas, et le mauvais choix peut vous coûter cher, en revenus manqués comme en temps perdu. Voici un comparatif concret pour vous aider à faire le bon choix.</p>
+
+<h2 style='color:#2665AE'>1️⃣ Pourquoi un logiciel de tarification dynamique est devenu indispensable</h2>
+
+<p>Fixer un prix unique à l'année pour votre location saisonnière revient à laisser de l'argent sur la table. En haute saison, vous sous-évaluez votre bien. En basse saison, vous le surévaluez et perdez des réservations. La saisonnalité tarifaire en location vacances est bien plus nuancée qu'un simple découpage été / hiver.</p>
+
+<p>Un outil de tarification saisonnière prend en compte des dizaines de variables en temps réel :</p>
+<ul>
+<li>Le taux d'occupation dans votre zone géographique</li>
+<li>Les événements locaux (festivals, salons, vacances scolaires)</li>
+<li>Le comportement de réservation des voyageurs (fenêtre de réservation, durée moyenne)</li>
+<li>Les prix pratiqués par les logements concurrents comparables</li>
+<li>Le jour de la semaine et les jours fériés</li>
+</ul>
+
+<p>Résultat : vos prix s'adaptent automatiquement pour capter la demande au bon moment, sans intervention quotidienne de votre part.</p>
+
+<h2 style='color:#2665AE'>2️⃣ Les principaux logiciels de tarification pour location courte durée</h2>
+
+<h3 style='color:#2665AE'>PriceLabs : la référence pour les prix dynamiques Airbnb</h3>
+
+<p><a href='https://pricelabs.co/' rel='nofollow'>PriceLabs</a> est l'un des outils les plus utilisés par les professionnels de la location courte durée. Son point fort : une granularité fine dans les paramètres et une couverture mondiale des données de marché.</p>
+
+<ul>
+<li><strong>Points forts</strong> : personnalisation poussée des règles tarifaires, intégration native avec Airbnb, Booking et la plupart des channel managers, données de marché détaillées par zone</li>
+<li><strong>Limites</strong> : l'interface demande un temps d'apprentissage, la richesse des options peut désorienter les débutants</li>
+<li><strong>Pour qui</strong> : propriétaires impliqués qui veulent garder la main sur leur stratégie tarifaire, ou conciergeries qui pilotent plusieurs logements</li>
+</ul>
+
+<h3 style='color:#2665AE'>Beyond Pricing : la simplicité avant tout</h3>
+
+<p>Beyond Pricing mise sur l'automatisation maximale. Vous connectez votre annonce, l'algorithme fait le reste. Moins de paramètres à régler, mais aussi moins de contrôle.</p>
+
+<ul>
+<li><strong>Points forts</strong> : mise en place rapide, interface épurée, bonne intégration Airbnb</li>
+<li><strong>Limites</strong> : moins de flexibilité pour ajuster manuellement certaines périodes, couverture géographique parfois inégale sur les marchés français secondaires</li>
+<li><strong>Pour qui</strong> : propriétaires qui veulent déléguer totalement la stratégie de prix sans se plonger dans les détails</li>
+</ul>
+
+<h3 style='color:#2665AE'>Wheelhouse : l'équilibre entre contrôle et automatisation</h3>
+
+<p>Wheelhouse propose deux modes de fonctionnement : un mode automatique et un mode avancé qui permet de définir des objectifs (maximiser le taux d'occupation ou le revenu par nuit). C'est un bon compromis.</p>
+
+<ul>
+<li><strong>Points forts</strong> : double approche (automatique ou personnalisée), tableau de bord clair, bon rapport qualité-prix</li>
+<li><strong>Limites</strong> : moins de données de marché comparatives que PriceLabs, intégrations un peu plus limitées</li>
+<li><strong>Pour qui</strong> : propriétaires qui veulent tester la tarification dynamique sans s'engager dans un outil trop complexe</li>
+</ul>
+
+<h3 style='color:#2665AE'>L'outil intégré d'Airbnb : Smart Pricing</h3>
+
+<p>Airbnb propose son propre système de prix dynamiques. Gratuit et intégré, il ajuste automatiquement vos tarifs en fonction de la demande sur la plateforme.</p>
+
+<ul>
+<li><strong>Points forts</strong> : aucun coût supplémentaire, activation en un clic, données Airbnb natives</li>
+<li><strong>Limites</strong> : tendance à tirer les prix vers le bas pour favoriser les réservations (ce qui profite davantage à la plateforme qu'au propriétaire), aucune prise en compte des autres canaux de diffusion, personnalisation très limitée</li>
+<li><strong>Pour qui</strong> : propriétaires qui débutent et veulent une première approche, mais à utiliser avec prudence</li>
+</ul>
+
+<h2 style='color:#2665AE'>3️⃣ Comment comparer ces outils : les critères qui comptent</h2>
+
+<p>Au-delà des fonctionnalités affichées, plusieurs critères concrets font la différence au quotidien :</p>
+
+<ul>
+<li><strong>Qualité des données locales</strong> : un algorithme performant à Paris peut être approximatif aux Mathes ou à Royan. Vérifiez que l'outil dispose de données fiables sur votre marché spécifique.</li>
+<li><strong>Compatibilité multi-plateformes</strong> : si vous diffusez sur Airbnb, Booking et Abritel simultanément, l'outil doit synchroniser les prix sur tous les canaux via un channel manager.</li>
+<li><strong>Possibilité de fixer des prix planchers et plafonds</strong> : indispensable pour ne jamais descendre en dessous d'un seuil acceptable ni afficher un tarif déconnecté du marché.</li>
+<li><strong>Règles saisonnières personnalisables</strong> : pouvoir ajuster les prix selon la saison (prix location été vs hiver) avec des règles propres à votre marché local.</li>
+<li><strong>Coût de l'outil</strong> : certains facturent un pourcentage par réservation, d'autres un abonnement fixe mensuel. Le choix dépend de votre volume de nuitées.</li>
+</ul>
+
+<h2 style='color:#2665AE'>4️⃣ L'outil ne fait pas tout : la stratégie derrière l'algorithme</h2>
+
+<p>Un logiciel de tarification pour location courte durée reste un outil. Il exécute une stratégie, il ne la remplace pas. Plusieurs décisions humaines restent déterminantes :</p>
+
+<p><strong>Définir son positionnement tarifaire.</strong> Votre logement est-il un bien premium ou un hébergement accessible ? L'algorithme ajuste des variations, mais le niveau de base doit refléter la réalité de votre offre.</p>
+
+<p><strong>Analyser les résultats régulièrement.</strong> Un taux d'occupation de 95 % avec des prix trop bas n'est pas une victoire. À l'inverse, un taux de 60 % avec un revenu par nuit élevé peut s'avérer plus rentable. Il faut surveiller le bon indicateur.</p>
+
+<p><strong>Adapter les paramètres au fil du temps.</strong> La concurrence évolue, de nouveaux logements apparaissent sur le marché, les habitudes de voyage changent. Un réglage initial ne reste pas pertinent indéfiniment.</p>
+
+<h2 style='color:#2665AE'>5️⃣ Confier la stratégie tarifaire à un professionnel local</h2>
+
+<p>Configurer un outil de tarification saisonnière demande du temps et une connaissance fine du marché local. Sur la Presqu'île d'Arvert par exemple, la saisonnalité est marquée : la demande explose de juin à septembre, se maintient pendant les vacances de Toussaint, puis chute fortement en janvier. À Bordeaux rive droite, la dynamique est différente, avec une demande plus lissée sur l'année grâce au tourisme urbain et aux déplacements professionnels.</p>
+
+<p>C'est précisément ce type d'expertise locale que propose <a href='/'>Dormirici</a>. La conciergerie utilise des outils de tarification dynamique calibrés pour chaque zone, avec un suivi continu des performances. Le propriétaire n'a pas à se soucier des réglages ni à surveiller les évolutions du marché au quotidien.</p>
+
+<h2 style='color:#2665AE'>✅ Conclusion</h2>
+
+<p>Le choix d'un logiciel de tarification dynamique pour votre location courte durée dépend de votre niveau d'implication, de votre marché local et de vos objectifs. PriceLabs offre la plus grande flexibilité, Beyond Pricing la plus grande simplicité, Wheelhouse un bon compromis. Le Smart Pricing d'Airbnb peut servir de point de départ, mais atteint vite ses limites.</p>
+
+<p>Dans tous les cas, l'outil seul ne suffit pas. C'est la stratégie, la connaissance du terrain et le suivi régulier qui font la différence. Si vous souhaitez optimiser vos revenus sans y consacrer vos soirées, contactez Dormirici pour bénéficier d'un accompagnement complet, de la stratégie tarifaire à la coordination opérationnelle de votre logement.</p>
+
+<p><span style='color:#2665AE'><strong>Astuce Dormirici</strong></span> : avant de choisir un outil, testez-le sur une période de 2 à 3 mois en définissant un prix plancher réaliste pour éviter toute mauvaise surprise, puis comparez le revenu par nuit obtenu avec vos résultats précédents.</p></div>
+    <div class="edit-hint">✏️ Corrigez le texte ici si besoin, puis cliquez sur « Copier l'article » et collez-le dans le corps de votre article Simplebo. La mise en forme est conservée.</div>
+  </div>
+
+  <div class="footer">
+    Généré automatiquement par Mon Site En Ligne · Ne pas partager ce lien
+  </div>
+
+</div>
+
+<script>
+function flash(btn, label) {
+  btn.innerHTML = '✅ Copié !';
+  btn.classList.add('copied');
+  setTimeout(function () { btn.innerHTML = label; btn.classList.remove('copied'); }, 3000);
+}
+
+function selectAndCopy(el) {
+  var range = document.createRange();
+  range.selectNodeContents(el);
+  var sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try { document.execCommand('copy'); } catch (e) {}
+  sel.removeAllRanges();
+}
+
+function copyRich(btn) {
+  var el = document.getElementById('article-preview');
+  var html = el.innerHTML.trim();
+  var text = el.innerText.trim();
+  if (navigator.clipboard && window.ClipboardItem) {
+    var item = new ClipboardItem({
+      'text/html': new Blob([html], { type: 'text/html' }),
+      'text/plain': new Blob([text], { type: 'text/plain' })
+    });
+    navigator.clipboard.write([item]).then(function () {
+      flash(btn, '📋 Copier l\'article');
+    }).catch(function () { selectAndCopy(el); flash(btn, '📋 Copier l\'article'); });
+  } else {
+    selectAndCopy(el);
+    flash(btn, '📋 Copier l\'article');
+  }
+}
+
+function copyHtml(btn) {
+  var html = document.getElementById('article-preview').innerHTML.trim();
+  navigator.clipboard.writeText(html).then(function () {
+    flash(btn, '&lt;/&gt; Copier le code HTML');
+  }).catch(function () {
+    var ta = document.createElement('textarea');
+    ta.value = html; document.body.appendChild(ta); ta.select();
+    document.execCommand('copy'); document.body.removeChild(ta);
+    flash(btn, '&lt;/&gt; Copier le code HTML');
+  });
+}
+</script>
+
+</body>
+</html>
