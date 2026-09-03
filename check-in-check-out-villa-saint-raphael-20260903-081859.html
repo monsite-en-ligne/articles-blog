@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Check-in et check-out en villa à Saint-Raphaël : ce qui fait la différence sur vos notes</title>
+<style>
+  :root { --accent: #2563EB; --accent-dark: #1d4ed8; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', Arial, sans-serif; background: #f0f2f5; min-height: 100vh; padding: 40px 20px; }
+  .container { max-width: 860px; margin: 0 auto; }
+  .header { text-align: center; margin-bottom: 40px; }
+  .header .badge { display: inline-block; background: #e8f0fe; color: var(--accent); font-size: 12px; font-weight: 600; padding: 6px 16px; border-radius: 20px; margin-bottom: 16px; letter-spacing: 1px; text-transform: uppercase; }
+  .header h1 { font-size: 28px; font-weight: 700; color: #1a1a1a; line-height: 1.3; margin-bottom: 8px; }
+  .header .meta { font-size: 14px; color: #888; }
+  .card { background: #fff; border-radius: 16px; box-shadow: 0 2px 20px rgba(0,0,0,0.06); overflow: hidden; margin-bottom: 24px; }
+  .card-header { padding: 20px 24px; border-bottom: 1px solid #f0f0f0; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .card-header h2 { font-size: 15px; font-weight: 600; color: #444; display: flex; align-items: center; gap: 8px; }
+  .card-header h2 span { font-size: 18px; }
+  .btn-copy { background: var(--accent); color: #fff; border: none; padding: 10px 20px; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: background 0.2s; }
+  .btn-copy:hover { background: var(--accent-dark); }
+  .btn-copy.copied { background: #27ae60; }
+  .preview { padding: 28px 32px; font-size: 15px; line-height: 1.75; color: #2a2a2a; outline: none; }
+  .preview:focus { box-shadow: inset 0 0 0 2px #e8f0fe; }
+  .preview h2 { font-size: 20px; margin: 22px 0 10px; line-height: 1.35; }
+  .preview h3 { font-size: 17px; margin: 18px 0 8px; }
+  .preview p { margin: 0 0 14px; }
+  .preview ul { margin: 0 0 14px 20px; }
+  .preview li { margin-bottom: 6px; }
+  .preview a { color: var(--accent); }
+  .edit-hint { font-size: 12px; color: #aaa; padding: 0 32px 20px; }
+  .instructions { background: #fff; border-radius: 16px; box-shadow: 0 2px 20px rgba(0,0,0,0.06); padding: 24px; }
+  .instructions h3 { font-size: 15px; font-weight: 600; color: #444; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+  .steps { list-style: none; }
+  .steps li { display: flex; align-items: flex-start; gap: 12px; padding: 10px 0; border-bottom: 1px solid #f5f5f5; font-size: 14px; color: #555; }
+  .steps li:last-child { border-bottom: none; }
+  .step-num { background: var(--accent); color: #fff; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0; }
+  .footer { text-align: center; margin-top: 32px; font-size: 12px; color: #aaa; }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="header">
+    <div class="badge">📝 Article prêt à relire</div>
+    <h1>Check-in et check-out en villa à Saint-Raphaël : ce qui fait la différence sur vos notes</h1>
+    <div class="meta">Généré automatiquement · À relire puis publier sur votre blog</div>
+  </div>
+
+  <div style="background:#fff; border-radius:16px; box-shadow:0 2px 20px rgba(0,0,0,0.06); padding:24px; margin-bottom:24px;">
+    <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:#888; margin-bottom:8px;">Titre de l'article</div>
+    <div style="font-size:16px; font-weight:700; color:#1a1a1a; margin-bottom:20px; padding:12px 16px; background:#f8f8f8; border-radius:8px; border-left:3px solid var(--accent);">Check-in et check-out en villa à Saint-Raphaël : ce qui fait la différence sur vos notes</div>
+    <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:#888; margin-bottom:8px;">Tags suggérés</div>
+    <div style="font-size:14px; color:#1a1a1a; padding:12px 16px; background:#f8f8f8; border-radius:8px; border-left:3px solid #27ae60;">accueil voyageurs villa Saint-Raphaël</div>
+  </div>
+
+  <div style="background:#fff; border-radius:16px; box-shadow:0 2px 20px rgba(0,0,0,0.06); padding:24px; margin-bottom:24px;">
+    <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:#888; margin-bottom:12px;">Image suggérée</div>
+    <img src="https://images.pexels.com/photos/740587/pexels-photo-740587.jpeg?auto=compress&cs=tinysrgb&h=650&w=940&fm=jpg&dl=image.jpg" alt="Image suggérée" style="width:100%; height:auto; border-radius:10px; display:block;">
+    <div style="font-size:12px; color:#aaa; margin-top:10px;">Photo : Min An · Pexels</div>
+  </div>
+
+  <div class="instructions">
+    <h3>📋 Comment publier sur Simplebo</h3>
+    <ol class="steps">
+      <li><div class="step-num">1</div><div>Connectez-vous à votre espace <strong>Simplebo</strong> et créez un <strong>nouvel article</strong></div></li>
+      <li><div class="step-num">2</div><div>Ajoutez le <strong>titre</strong>, les <strong>tags</strong> et la <strong>catégorie</strong></div></li>
+      <li><div class="step-num">3</div><div><strong>Relisez et corrigez</strong> le texte directement dans l'aperçu ci-dessous</div></li>
+      <li><div class="step-num">4</div><div>Cliquez sur <strong>Copier l'article</strong> puis collez dans le corps de l'article (la mise en forme est conservée)</div></li>
+      <li><div class="step-num">5</div><div>Si la couleur ne passe pas, utilisez plutôt <strong>Copier le code HTML</strong> dans la section HTML de Simplebo</div></li>
+      <li><div class="step-num">6</div><div>Cliquez sur <strong>Publier</strong> ✅</div></li>
+    </ol>
+  </div>
+
+  <div class="card" style="margin-top:24px;">
+    <div class="card-header">
+      <h2><span>👀</span> Aperçu de l'article (modifiable)</h2>
+      <div style="display:flex; gap:8px; flex-wrap:wrap;">
+        <button class="btn-copy" onclick="copyRich(this)">📋 Copier l'article</button>
+        <button class="btn-copy" style="background:#888;" onclick="copyHtml(this)">&lt;/&gt; Copier le code HTML</button>
+      </div>
+    </div>
+    <div id="article-preview" class="preview" contenteditable="true"><p>L'<strong>accueil voyageurs villa Saint-Raphaël</strong> ne se résume pas à un simple échange de clés sur le pas de la porte. En location saisonnière, le check-in et le check-out sont les deux moments qui cristallisent l'essentiel de l'expérience client. Un arrivant qui découvre une villa avec piscine à Valescure ou une maison avec vue mer à Boulouris se forge une opinion définitive dans les dix premières minutes. Et cette impression se retrouve, mot pour mot, dans la note qu'il laissera sur Airbnb ou Booking. Voyons précisément ce qui fait basculer un avis de « correct » à « exceptionnel ».</p>
+
+<h2>🔑 Check-in en villa : bien plus qu'une remise de clés</h2>
+
+<p>Remettre un trousseau, c'est facile. Créer un effet « waouh » dès le seuil franchi, c'est un métier. La différence entre un check-in banal et un accueil mémorable repose sur trois piliers concrets.</p>
+
+<h3>La ponctualité et la flexibilité horaire</h3>
+
+<p>Un voyageur qui arrive après quatre heures de route depuis Lyon ou Paris ne veut pas attendre devant le portail. Proposer une plage d'arrivée flexible, idéalement entre 15 h et 20 h, montre que vous pensez à son confort. Quand un imprévu survient (vol retardé, embouteillage sur l'A8 au niveau de Fréjus), un simple SMS pour rassurer change tout. Cette réactivité se traduit directement dans les commentaires.</p>
+
+<h3>La visite guidée de la villa et de ses extérieurs</h3>
+
+<p>Une villa à Saint-Raphaël possède des spécificités qu'un voyageur ne découvrira pas seul : le fonctionnement du portail électrique, le système d'arrosage du jardin, le local technique de la piscine, la télécommande du store banne sur la terrasse. Prendre quinze minutes pour tout montrer évite des dizaines de messages pendant le séjour et supprime une source majeure de frustration.</p>
+
+<p>Il ne s'agit pas de réciter un manuel. L'idéal est de faire le tour en marchant avec le voyageur, du salon vers la cuisine, puis la terrasse, le jardin, la piscine. Chaque espace mérite une explication courte et une astuce locale : le meilleur boulanger du quartier, l'accès piéton à la plage la plus proche à Saint-Aygulf, le marché du jeudi à Agay.</p>
+
+<h3>Les consignes piscine : un incontournable souvent négligé</h3>
+
+<p>La piscine est le premier critère de recherche pour les familles qui réservent une villa dans le Var. Pourtant, beaucoup de propriétaires oublient de formaliser des consignes claires. Profondeur du bassin, horaires d'utilisation si le voisinage est proche, fonctionnement du volet roulant ou de la bâche, interdiction de sauter depuis la margelle, douche obligatoire avant le bain : ces informations protègent à la fois les voyageurs et le propriétaire.</p>
+
+<p>Un livret plastifié posé près de la plage de piscine, complété par une explication orale au moment du check-in, réduit considérablement les incidents. Les <a href='https://www.service-public.fr/particuliers/vosdroits/F1722' rel='nofollow'>obligations de sécurité pour les piscines privées</a> imposent d'ailleurs des dispositifs précis (alarme, barrière, couverture ou abri). Rappeler leur existence aux voyageurs est une question de responsabilité.</p>
+
+<h2>📋 Le livret d'accueil : votre allié silencieux</h2>
+
+<p>Un bon livret d'accueil ne remplace pas la visite guidée. Il la prolonge. Dans une villa avec jardin et piscine, le contenu doit être spécifique au bien, jamais générique. Voici les rubriques essentielles :</p>
+
+<ul>
+<li>Code wifi, mot de passe et astuce de connexion si le réseau est capricieux</li>
+<li>Fonctionnement des équipements : climatisation, barbecue, plancha, lave-vaisselle</li>
+<li>Consignes piscine détaillées avec schéma du local technique</li>
+<li>Jours et horaires de collecte des poubelles dans le quartier</li>
+<li>Numéros utiles : urgences, pharmacie de garde, taxi local</li>
+<li>Bonnes adresses personnalisées : restaurants à Boulouris, criques accessibles à pied depuis Le Dramont, location de paddle à Agay</li>
+</ul>
+
+<p>Un livret bien conçu réduit le nombre de sollicitations pendant le séjour de 60 à 70 %. Moins de messages, moins de stress pour le propriétaire, et des voyageurs autonomes qui apprécient la qualité de l'information fournie.</p>
+
+<h2>🚪 Check-out : le moment que tout le monde sous-estime</h2>
+
+<p>Le départ est souvent bâclé. Or c'est la dernière impression, celle qui reste en tête quand le voyageur rédige son avis. Un check-out mal organisé peut ruiner un séjour par ailleurs irréprochable.</p>
+
+<h3>Des consignes de départ claires et réalistes</h3>
+
+<p>Demander aux voyageurs de passer l'aspirateur, laver les draps, nettoyer la piscine et trier les déchets avant 10 h du matin ? C'est le meilleur moyen de récolter une note médiocre. Les consignes de départ doivent rester raisonnables :</p>
+
+<ul>
+<li>Rassembler le linge de lit et les serviettes dans un endroit désigné</li>
+<li>Vider le réfrigérateur</li>
+<li>Lancer un cycle de lave-vaisselle</li>
+<li>Fermer les volets et verrouiller les baies vitrées</li>
+<li>Remettre les clés dans la boîte à clés sécurisée</li>
+</ul>
+
+<p>Le ménage approfondi, la remise en état de la piscine, le contrôle du jardin : tout cela relève du travail professionnel réalisé entre deux séjours. Le voyageur n'est pas un agent d'entretien.</p>
+
+<h3>L'état des lieux de sortie : rapide mais rigoureux</h3>
+
+<p>Quand le check-out est accompagné d'une personne présente sur place, l'état des lieux se fait en quelques minutes. Terrasse, mobilier de jardin, cuisine, salles de bain, piscine : un tour méthodique suffit. Photographier les points sensibles (plan de travail, revêtement de la douche, margelles) permet de documenter l'état du bien sans créer de tension avec le voyageur.</p>
+
+<p>Cette rigueur protège le propriétaire en cas de dégradation et rassure les futurs locataires qui lisent dans les avis que le bien est « parfaitement entretenu ».</p>
+
+<h2>⭐ Comment l'accueil voyageurs villa influence directement vos notes</h2>
+
+<p>Sur Airbnb, la catégorie « Arrivée » est l'un des cinq critères de notation. Une note inférieure à 4,7 sur ce seul critère suffit à faire chuter votre visibilité dans les résultats de recherche. À Saint-Raphaël, où la concurrence entre villas est forte en haute saison, chaque dixième de point compte.</p>
+
+<p>Ce qui revient le plus souvent dans les commentaires négatifs liés au check-in ou au check-out :</p>
+
+<ul>
+<li>Attente à l'arrivée sans information ni contact joignable</li>
+<li>Aucune explication sur le fonctionnement de la villa</li>
+<li>Consignes de départ excessives ou contradictoires</li>
+<li>Piscine non prête ou consignes de sécurité absentes</li>
+</ul>
+
+<p>Inversement, les avis cinq étoiles mentionnent presque toujours la qualité de l'accueil, la disponibilité de la personne présente et les recommandations locales personnalisées. Un voyageur qui se sent attendu dans une villa à Saint-Aygulf, avec la piscine chauffée, une bouteille de rosé de Provence au frais et un mot de bienvenue, note spontanément 5/5.</p>
+
+<h2>🤝 Déléguer l'accueil pour garantir la constance</h2>
+
+<p>Le talon d'Achille de nombreux propriétaires, c'est la régularité. Assurer un accueil impeccable en juillet quand on est sur place, c'est faisable. Maintenir le même niveau en septembre quand on est rentré à Paris, c'est une autre histoire. La fatigue, l'éloignement, les imprévus dégradent progressivement la qualité du check-in et du check-out.</p>
+
+<p>Confier la coordination des arrivées et des départs à une conciergerie spécialisée dans les villas permet de standardiser l'excellence. Chaque voyageur reçoit le même niveau d'attention, les mêmes explications détaillées, le même accompagnement personnalisé. L'équipe de <a href='/'>Liberté Conciergerie</a> connaît chaque villa qu'elle accompagne à Saint-Raphaël et à Saint-Aygulf : ses particularités techniques, ses atouts, ses petits défauts à anticiper. C'est cette connaissance fine du bien qui fait la différence dans les avis.</p>
+
+<h2>✅ En résumé : les détails qui transforment vos avis</h2>
+
+<p>Pour améliorer durablement votre note sur Airbnb ou Booking, concentrez vos efforts sur ces deux moments charnières. Check-in soigné avec visite guidée, consignes piscine limpides, livret d'accueil concret. Check-out simple avec des attentes réalistes et un état des lieux serein. La recette n'est pas compliquée. Elle demande simplement de la rigueur, de l'empathie et une présence fiable à chaque rotation.</p>
+
+<p>Vous possédez une villa à Saint-Raphaël, à Boulouris, à Valescure ou à Saint-Aygulf et vous souhaitez offrir un accueil irréprochable à vos voyageurs sans vous en occuper vous-même ? <strong>Contactez Liberté Conciergerie</strong> pour découvrir un accompagnement sur mesure, pensé exclusivement pour les villas et maisons individuelles de la côte varoise.</p></div>
+    <div class="edit-hint">✏️ Corrigez le texte ici si besoin, puis cliquez sur « Copier l'article » et collez-le dans le corps de votre article Simplebo. La mise en forme est conservée.</div>
+  </div>
+
+  <div class="footer">
+    Généré automatiquement par Mon Site En Ligne · Ne pas partager ce lien
+  </div>
+
+</div>
+
+<script>
+function flash(btn, label) {
+  btn.innerHTML = '✅ Copié !';
+  btn.classList.add('copied');
+  setTimeout(function () { btn.innerHTML = label; btn.classList.remove('copied'); }, 3000);
+}
+
+function selectAndCopy(el) {
+  var range = document.createRange();
+  range.selectNodeContents(el);
+  var sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try { document.execCommand('copy'); } catch (e) {}
+  sel.removeAllRanges();
+}
+
+function copyRich(btn) {
+  var el = document.getElementById('article-preview');
+  var html = el.innerHTML.trim();
+  var text = el.innerText.trim();
+  if (navigator.clipboard && window.ClipboardItem) {
+    var item = new ClipboardItem({
+      'text/html': new Blob([html], { type: 'text/html' }),
+      'text/plain': new Blob([text], { type: 'text/plain' })
+    });
+    navigator.clipboard.write([item]).then(function () {
+      flash(btn, '📋 Copier l\'article');
+    }).catch(function () { selectAndCopy(el); flash(btn, '📋 Copier l\'article'); });
+  } else {
+    selectAndCopy(el);
+    flash(btn, '📋 Copier l\'article');
+  }
+}
+
+function copyHtml(btn) {
+  var html = document.getElementById('article-preview').innerHTML.trim();
+  navigator.clipboard.writeText(html).then(function () {
+    flash(btn, '&lt;/&gt; Copier le code HTML');
+  }).catch(function () {
+    var ta = document.createElement('textarea');
+    ta.value = html; document.body.appendChild(ta); ta.select();
+    document.execCommand('copy'); document.body.removeChild(ta);
+    flash(btn, '&lt;/&gt; Copier le code HTML');
+  });
+}
+</script>
+
+</body>
+</html>
