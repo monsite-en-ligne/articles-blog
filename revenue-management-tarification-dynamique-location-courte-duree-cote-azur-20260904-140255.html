@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Revenue management en location courte durée : les outils de tarification dynamique sur la Côte d'Azur</title>
+<style>
+  :root { --accent: #2563EB; --accent-dark: #1d4ed8; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', Arial, sans-serif; background: #f0f2f5; min-height: 100vh; padding: 40px 20px; }
+  .container { max-width: 860px; margin: 0 auto; }
+  .header { text-align: center; margin-bottom: 40px; }
+  .header .badge { display: inline-block; background: #e8f0fe; color: var(--accent); font-size: 12px; font-weight: 600; padding: 6px 16px; border-radius: 20px; margin-bottom: 16px; letter-spacing: 1px; text-transform: uppercase; }
+  .header h1 { font-size: 28px; font-weight: 700; color: #1a1a1a; line-height: 1.3; margin-bottom: 8px; }
+  .header .meta { font-size: 14px; color: #888; }
+  .card { background: #fff; border-radius: 16px; box-shadow: 0 2px 20px rgba(0,0,0,0.06); overflow: hidden; margin-bottom: 24px; }
+  .card-header { padding: 20px 24px; border-bottom: 1px solid #f0f0f0; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .card-header h2 { font-size: 15px; font-weight: 600; color: #444; display: flex; align-items: center; gap: 8px; }
+  .card-header h2 span { font-size: 18px; }
+  .btn-copy { background: var(--accent); color: #fff; border: none; padding: 10px 20px; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: background 0.2s; }
+  .btn-copy:hover { background: var(--accent-dark); }
+  .btn-copy.copied { background: #27ae60; }
+  .preview { padding: 28px 32px; font-size: 15px; line-height: 1.75; color: #2a2a2a; outline: none; }
+  .preview:focus { box-shadow: inset 0 0 0 2px #e8f0fe; }
+  .preview h2 { font-size: 20px; margin: 22px 0 10px; line-height: 1.35; }
+  .preview h3 { font-size: 17px; margin: 18px 0 8px; }
+  .preview p { margin: 0 0 14px; }
+  .preview ul { margin: 0 0 14px 20px; }
+  .preview li { margin-bottom: 6px; }
+  .preview a { color: var(--accent); }
+  .edit-hint { font-size: 12px; color: #aaa; padding: 0 32px 20px; }
+  .instructions { background: #fff; border-radius: 16px; box-shadow: 0 2px 20px rgba(0,0,0,0.06); padding: 24px; }
+  .instructions h3 { font-size: 15px; font-weight: 600; color: #444; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+  .steps { list-style: none; }
+  .steps li { display: flex; align-items: flex-start; gap: 12px; padding: 10px 0; border-bottom: 1px solid #f5f5f5; font-size: 14px; color: #555; }
+  .steps li:last-child { border-bottom: none; }
+  .step-num { background: var(--accent); color: #fff; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0; }
+  .footer { text-align: center; margin-top: 32px; font-size: 12px; color: #aaa; }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="header">
+    <div class="badge">📝 Article prêt à relire</div>
+    <h1>Revenue management en location courte durée : les outils de tarification dynamique sur la Côte d'Azur</h1>
+    <div class="meta">Généré automatiquement · À relire puis publier sur votre blog</div>
+  </div>
+
+  <div style="background:#fff; border-radius:16px; box-shadow:0 2px 20px rgba(0,0,0,0.06); padding:24px; margin-bottom:24px;">
+    <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:#888; margin-bottom:8px;">Titre de l'article</div>
+    <div style="font-size:16px; font-weight:700; color:#1a1a1a; margin-bottom:20px; padding:12px 16px; background:#f8f8f8; border-radius:8px; border-left:3px solid var(--accent);">Revenue management en location courte durée : les outils de tarification dynamique sur la Côte d'Azur</div>
+    <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:#888; margin-bottom:8px;">Tags suggérés</div>
+    <div style="font-size:14px; color:#1a1a1a; padding:12px 16px; background:#f8f8f8; border-radius:8px; border-left:3px solid #27ae60;">tarification saisonnière Airbnb Côte d'Azur</div>
+  </div>
+
+  <div style="background:#fff; border-radius:16px; box-shadow:0 2px 20px rgba(0,0,0,0.06); padding:24px; margin-bottom:24px;">
+    <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:#888; margin-bottom:12px;">Image suggérée</div>
+    <img src="https://images.pexels.com/photos/8406963/pexels-photo-8406963.jpeg?auto=compress&cs=tinysrgb&h=650&w=940&fm=jpg&dl=image.jpg" alt="Image suggérée" style="width:100%; height:auto; border-radius:10px; display:block;">
+    <div style="font-size:12px; color:#aaa; margin-top:10px;">Photo : Tara Winstead · Pexels</div>
+  </div>
+
+  <div class="instructions">
+    <h3>📋 Comment publier sur Simplebo</h3>
+
+    <a href="https://www.loom.com/share/cbcd3f9580ef46e5ad5c27c18b121676" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:8px; background:var(--accent, #2563EB); color:#fff; text-decoration:none; padding:11px 20px; border-radius:8px; font-size:14px; font-weight:600; margin-bottom:16px;">▶️ Voir le tutoriel vidéo</a>
+
+    <ol class="steps">
+      <li><div class="step-num">1</div><div>Connectez-vous à votre espace <strong>Simplebo</strong> et créez un <strong>nouvel article</strong></div></li>
+      <li><div class="step-num">2</div><div>Ajoutez le <strong>titre</strong>, les <strong>tags</strong> et la <strong>catégorie</strong></div></li>
+      <li><div class="step-num">3</div><div><strong>Relisez et corrigez</strong> le texte directement dans l'aperçu ci-dessous</div></li>
+      <li><div class="step-num">4</div><div>Cliquez sur <strong>Copier l'article</strong> puis collez dans le corps de l'article (la mise en forme est conservée)</div></li>
+      <li><div class="step-num">5</div><div>Si la couleur ne passe pas, utilisez plutôt <strong>Copier le code HTML</strong> dans la section HTML de Simplebo</div></li>
+      <li><div class="step-num">6</div><div>Cliquez sur <strong>Publier</strong> ✅</div></li>
+    </ol>
+  </div>
+
+  <div class="card" style="margin-top:24px;">
+    <div class="card-header">
+      <h2><span>👀</span> Aperçu de l'article (modifiable)</h2>
+      <div style="display:flex; gap:8px; flex-wrap:wrap;">
+        <button class="btn-copy" onclick="copyRich(this)">📋 Copier l'article</button>
+        <button class="btn-copy" style="background:#888;" onclick="copyHtml(this)">&lt;/&gt; Copier le code HTML</button>
+      </div>
+    </div>
+    <div id="article-preview" class="preview" contenteditable="true"><p>Sur la Côte d'Azur, la <strong>tarification saisonnière Airbnb Côte d'Azur</strong> ne se résume plus à fixer un prix estival élevé et un tarif hivernal bas. Les écarts de demande entre une semaine de juillet à Mandelieu-La-Napoule et un lundi de novembre aux Adrets de l'Estérel sont tels qu'une approche statique laisse systématiquement de l'argent sur la table. C'est ici que les outils de tarification dynamique changent la donne : ils analysent en temps réel l'offre, la demande et la concurrence pour ajuster vos prix nuit par nuit, sans que vous ayez à intervenir.</p>
+
+<h2>Pourquoi le revenue management s'impose en location courte durée sur la Côte d'Azur</h2>
+
+<p>Le marché azuréen présente une saisonnalité particulièrement marquée. Entre le Festival de Cannes en mai, les vacances scolaires d'été, le MIPIM en mars ou les événements nautiques à Mandelieu, la demande fluctue de façon spectaculaire. Un tarif figé à 120 € la nuit peut être parfait un mardi de septembre, mais sous-évalué de 40 % le week-end du 14 juillet, ou surévalué au point de repousser tout voyageur en janvier.</p>
+
+<p>Le revenue management, emprunté à l'hôtellerie, consiste à vendre la bonne nuit au bon prix, au bon moment. Appliqué à la location courte durée, il repose sur trois piliers :</p>
+
+<ul>
+<li><strong>L'analyse de la demande locale</strong> : événements, météo, vacances scolaires, tendances de recherche sur les plateformes.</li>
+<li><strong>Le suivi de la concurrence</strong> : nombre d'annonces disponibles, prix pratiqués par les logements comparables dans votre secteur.</li>
+<li><strong>L'optimisation du taux d'occupation</strong> : trouver l'équilibre entre un prix élevé qui maximise le revenu par nuit et un prix attractif qui évite les nuits vides.</li>
+</ul>
+
+<h2>Les outils de tarification dynamique adaptés au marché azuréen</h2>
+
+<h3>PriceLabs : la référence pour la granularité locale</h3>
+
+<p><a href='https://www.pricelabs.co/' rel='nofollow'>PriceLabs</a> est l'un des outils les plus utilisés par les professionnels de la location saisonnière. Il permet de définir des stratégies de prix personnalisées en fonction de la zone géographique, du type de bien et de la saisonnalité. Pour un appartement vue mer à Théoule-sur-Mer ou une villa avec piscine à Mandelieu, les recommandations tarifaires seront radicalement différentes, et c'est précisément ce niveau de finesse qui fait la différence.</p>
+
+<p>Parmi ses atouts :</p>
+<ul>
+<li>Paramétrage d'un tarif minimum par nuit pour protéger votre rentabilité plancher.</li>
+<li>Ajustement automatique selon le délai avant la date d'arrivée (last minute, réservation anticipée).</li>
+<li>Prise en compte des événements locaux et des jours fériés français.</li>
+</ul>
+
+<h3>Beyond Pricing et Wheelhouse : deux alternatives solides</h3>
+
+<p>Beyond Pricing se distingue par sa simplicité d'utilisation. Une fois connecté à votre calendrier Airbnb ou Booking, il ajuste les prix quotidiennement sans intervention. Wheelhouse, de son côté, offre davantage de contrôle : vous choisissez un curseur entre « maximiser le revenu » et « maximiser l'occupation », ce qui convient parfaitement aux propriétaires qui préfèrent un taux de remplissage élevé plutôt qu'un prix moyen haut.</p>
+
+<p>Ces deux solutions intègrent des données de marché sur la Côte d'Azur, mais leur couverture reste plus générale que celle de PriceLabs sur des micro-marchés comme Mandelieu ou Les Adrets de l'Estérel.</p>
+
+<h2>Saisonnalité location vacances Mandelieu : les périodes clés à comprendre</h2>
+
+<p>Pour calibrer correctement un outil de tarification dynamique, il faut d'abord comprendre le rythme de votre marché. Voici les grandes phases observées à Mandelieu-La-Napoule et ses environs :</p>
+
+<ul>
+<li><strong>Haute saison (mi-juin à mi-septembre)</strong> : la demande explose. Le prix location saisonnière Mandelieu été peut atteindre deux à trois fois le tarif de basse saison. Les séjours d'une semaine dominent.</li>
+<li><strong>Saisons intermédiaires (avril-mai et octobre)</strong> : portées par les événements cannois, les ponts de mai et l'arrière-saison douce. Les courts séjours de 3 à 5 nuits sont fréquents.</li>
+<li><strong>Basse saison (novembre à mars)</strong> : la demande se contracte nettement, mais des niches existent. Le MIPIM, les voyageurs d'affaires et les séjours longue durée permettent de maintenir un revenu si le tarif minimum nuit Airbnb Côte d'Azur est bien calibré.</li>
+</ul>
+
+<p>Un outil de tarification dynamique exploite ces variations automatiquement. Mais il ne remplace pas une connaissance fine du terrain. Savoir qu'un salon nautique à Mandelieu remplit les logements dans un rayon de 10 km, ou qu'un week-end prolongé de l'Ascension génère des réservations trois semaines à l'avance, permet d'affiner les paramètres et d'obtenir des résultats supérieurs à ceux d'un algorithme laissé en pilote automatique.</p>
+
+<h2>Comment paramétrer efficacement votre outil de tarification</h2>
+
+<h3>Définir un tarif plancher réaliste</h3>
+
+<p>Le tarif minimum protège votre rentabilité. Il doit couvrir vos charges fixes (ménage, linge, consommations, commission plateforme) avec une marge suffisante. Un appartement T2 à Mandelieu avec des charges de 45 € par rotation ne devrait jamais descendre en dessous de 65 à 75 € la nuit, même en basse saison. Fixer un plancher trop bas attire des réservations qui vous coûtent plus qu'elles ne rapportent.</p>
+
+<h3>Ajuster les paramètres de durée minimale</h3>
+
+<p>En haute saison, imposer un séjour minimum de 5 ou 7 nuits évite les trous de calendrier entre deux réservations courtes. En basse saison, abaisser cette durée à 2 nuits augmente vos chances de remplissage. Les outils de tarification dynamique permettent de programmer ces variations automatiquement selon les périodes.</p>
+
+<h3>Surveiller et corriger régulièrement</h3>
+
+<p>Aucun algorithme n'est infaillible. Il est essentiel de vérifier les recommandations tarifaires au moins une fois par semaine, surtout en amont des périodes de forte demande. Un événement annulé à Cannes, une météo exceptionnelle en octobre ou une nouvelle réglementation locale peuvent bouleverser les prévisions.</p>
+
+<h2>L'accompagnement humain, complément indispensable de la technologie</h2>
+
+<p>Les outils de tarification dynamique en location saisonnière sont puissants, mais ils atteignent leur plein potentiel lorsqu'ils sont pilotés par des professionnels qui connaissent le terrain. La connaissance des habitudes de réservation à Théoule-sur-Mer, la compréhension des attentes des voyageurs haut de gamme ou la capacité à anticiper un pic de demande local sont des compétences qu'aucun logiciel ne remplace entièrement.</p>
+
+<p>C'est précisément cette approche que propose <a href='/'>Hôte Sérénités</a> : un accompagnement complet qui combine l'expertise des outils de revenue management avec une présence locale à Mandelieu-La-Napoule, Les Adrets de l'Estérel et Théoule-sur-Mer. L'optimisation tarifaire fait partie intégrante du suivi des réservations, aux côtés de la préparation du logement, de l'accueil voyageurs et de la valorisation de votre annonce.</p>
+
+<h2>Passez à une tarification intelligente pour votre bien</h2>
+
+<p>La tarification saisonnière Airbnb Côte d'Azur ne peut plus se résumer à deux ou trois paliers de prix fixés en début d'année. Les propriétaires qui adoptent une approche dynamique constatent des gains de revenus significatifs, souvent de l'ordre de 15 à 30 % par rapport à une tarification statique, tout en maintenant un taux d'occupation élevé.</p>
+
+<p>Si vous souhaitez confier l'optimisation tarifaire de votre logement à une équipe qui maîtrise à la fois les outils et le marché local, contactez Hôte Sérénités. Nous analysons le potentiel de votre bien et mettons en place une stratégie de prix adaptée à chaque saison, chaque événement et chaque nuit.</p></div>
+    <div class="edit-hint">✏️ Corrigez le texte ici si besoin, puis cliquez sur « Copier l'article » et collez-le dans le corps de votre article Simplebo. La mise en forme est conservée.</div>
+  </div>
+
+  <div class="footer">
+    Généré automatiquement par Mon Site En Ligne · Ne pas partager ce lien
+  </div>
+
+</div>
+
+<script>
+function flash(btn, label) {
+  btn.innerHTML = '✅ Copié !';
+  btn.classList.add('copied');
+  setTimeout(function () { btn.innerHTML = label; btn.classList.remove('copied'); }, 3000);
+}
+
+function selectAndCopy(el) {
+  var range = document.createRange();
+  range.selectNodeContents(el);
+  var sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try { document.execCommand('copy'); } catch (e) {}
+  sel.removeAllRanges();
+}
+
+function copyRich(btn) {
+  var el = document.getElementById('article-preview');
+  var html = el.innerHTML.trim();
+  var text = el.innerText.trim();
+  if (navigator.clipboard && window.ClipboardItem) {
+    var item = new ClipboardItem({
+      'text/html': new Blob([html], { type: 'text/html' }),
+      'text/plain': new Blob([text], { type: 'text/plain' })
+    });
+    navigator.clipboard.write([item]).then(function () {
+      flash(btn, '📋 Copier l\'article');
+    }).catch(function () { selectAndCopy(el); flash(btn, '📋 Copier l\'article'); });
+  } else {
+    selectAndCopy(el);
+    flash(btn, '📋 Copier l\'article');
+  }
+}
+
+function copyHtml(btn) {
+  var html = document.getElementById('article-preview').innerHTML.trim();
+  navigator.clipboard.writeText(html).then(function () {
+    flash(btn, '&lt;/&gt; Copier le code HTML');
+  }).catch(function () {
+    var ta = document.createElement('textarea');
+    ta.value = html; document.body.appendChild(ta); ta.select();
+    document.execCommand('copy'); document.body.removeChild(ta);
+    flash(btn, '&lt;/&gt; Copier le code HTML');
+  });
+}
+</script>
+
+</body>
+</html>
