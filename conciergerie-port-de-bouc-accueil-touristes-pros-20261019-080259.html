@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conciergerie Port-de-Bouc : accueillir touristes et pros avec les mêmes exigences</title>
+<style>
+  :root { --accent: #2563EB; --accent-dark: #1d4ed8; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', Arial, sans-serif; background: #f0f2f5; min-height: 100vh; padding: 40px 20px; }
+  .container { max-width: 860px; margin: 0 auto; }
+  .header { text-align: center; margin-bottom: 40px; }
+  .header .badge { display: inline-block; background: #e8f0fe; color: var(--accent); font-size: 12px; font-weight: 600; padding: 6px 16px; border-radius: 20px; margin-bottom: 16px; letter-spacing: 1px; text-transform: uppercase; }
+  .header h1 { font-size: 28px; font-weight: 700; color: #1a1a1a; line-height: 1.3; margin-bottom: 8px; }
+  .header .meta { font-size: 14px; color: #888; }
+  .card { background: #fff; border-radius: 16px; box-shadow: 0 2px 20px rgba(0,0,0,0.06); overflow: hidden; margin-bottom: 24px; }
+  .card-header { padding: 20px 24px; border-bottom: 1px solid #f0f0f0; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .card-header h2 { font-size: 15px; font-weight: 600; color: #444; display: flex; align-items: center; gap: 8px; }
+  .card-header h2 span { font-size: 18px; }
+  .btn-copy { background: var(--accent); color: #fff; border: none; padding: 10px 20px; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: background 0.2s; }
+  .btn-copy:hover { background: var(--accent-dark); }
+  .btn-copy.copied { background: #27ae60; }
+  .preview { padding: 28px 32px; font-size: 15px; line-height: 1.75; color: #2a2a2a; outline: none; }
+  .preview:focus { box-shadow: inset 0 0 0 2px #e8f0fe; }
+  .preview h2 { font-size: 20px; margin: 22px 0 10px; line-height: 1.35; }
+  .preview h3 { font-size: 17px; margin: 18px 0 8px; }
+  .preview p { margin: 0 0 14px; }
+  .preview ul { margin: 0 0 14px 20px; }
+  .preview li { margin-bottom: 6px; }
+  .preview a { color: var(--accent); }
+  .edit-hint { font-size: 12px; color: #aaa; padding: 0 32px 20px; }
+  .instructions { background: #fff; border-radius: 16px; box-shadow: 0 2px 20px rgba(0,0,0,0.06); padding: 24px; }
+  .instructions h3 { font-size: 15px; font-weight: 600; color: #444; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+  .steps { list-style: none; }
+  .steps li { display: flex; align-items: flex-start; gap: 12px; padding: 10px 0; border-bottom: 1px solid #f5f5f5; font-size: 14px; color: #555; }
+  .steps li:last-child { border-bottom: none; }
+  .step-num { background: var(--accent); color: #fff; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0; }
+  .footer { text-align: center; margin-top: 32px; font-size: 12px; color: #aaa; }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="header">
+    <div class="badge">📝 Article prêt à relire</div>
+    <h1>Conciergerie Port-de-Bouc : accueillir touristes et pros avec les mêmes exigences</h1>
+    <div class="meta">Généré automatiquement · À relire puis publier sur votre blog</div>
+  </div>
+
+  <div style="background:#fff; border-radius:16px; box-shadow:0 2px 20px rgba(0,0,0,0.06); padding:24px; margin-bottom:24px;">
+    <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:#888; margin-bottom:8px;">Titre de l'article</div>
+    <div style="font-size:16px; font-weight:700; color:#1a1a1a; margin-bottom:20px; padding:12px 16px; background:#f8f8f8; border-radius:8px; border-left:3px solid var(--accent);">Conciergerie Port-de-Bouc : accueillir touristes et pros avec les mêmes exigences</div>
+    <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:#888; margin-bottom:8px;">Tags suggérés</div>
+    <div style="font-size:14px; color:#1a1a1a; padding:12px 16px; background:#f8f8f8; border-radius:8px; border-left:3px solid #27ae60;">conciergerie Port-de-Bouc</div>
+  </div>
+
+  <div style="background:#fff; border-radius:16px; box-shadow:0 2px 20px rgba(0,0,0,0.06); padding:24px; margin-bottom:24px;">
+    <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:#888; margin-bottom:12px;">Image suggérée</div>
+    <img src="https://images.pexels.com/photos/5371676/pexels-photo-5371676.jpeg?auto=compress&cs=tinysrgb&h=650&w=940&fm=jpg&dl=image.jpg" alt="Image suggérée" style="width:100%; height:auto; border-radius:10px; display:block;">
+    <div style="font-size:12px; color:#aaa; margin-top:10px;">Photo : cottonbro studio · Pexels</div>
+  </div>
+
+  <div class="instructions">
+    <h3>📋 Comment publier sur Simplebo</h3>
+    <ol class="steps">
+      <li><div class="step-num">1</div><div>Connectez-vous à votre espace <strong>Simplebo</strong> et créez un <strong>nouvel article</strong></div></li>
+      <li><div class="step-num">2</div><div>Ajoutez le <strong>titre</strong>, les <strong>tags</strong> et la <strong>catégorie</strong></div></li>
+      <li><div class="step-num">3</div><div><strong>Relisez et corrigez</strong> le texte directement dans l'aperçu ci-dessous</div></li>
+      <li><div class="step-num">4</div><div>Cliquez sur <strong>Copier l'article</strong> puis collez dans le corps de l'article (la mise en forme est conservée)</div></li>
+      <li><div class="step-num">5</div><div>Si la couleur ne passe pas, utilisez plutôt <strong>Copier le code HTML</strong> dans la section HTML de Simplebo</div></li>
+      <li><div class="step-num">6</div><div>Cliquez sur <strong>Publier</strong> ✅</div></li>
+    </ol>
+  </div>
+
+  <div class="card" style="margin-top:24px;">
+    <div class="card-header">
+      <h2><span>👀</span> Aperçu de l'article (modifiable)</h2>
+      <div style="display:flex; gap:8px; flex-wrap:wrap;">
+        <button class="btn-copy" onclick="copyRich(this)">📋 Copier l'article</button>
+        <button class="btn-copy" style="background:#888;" onclick="copyHtml(this)">&lt;/&gt; Copier le code HTML</button>
+      </div>
+    </div>
+    <div id="article-preview" class="preview" contenteditable="true"><p>À Port-de-Bouc, les logements en location courte durée accueillent deux profils bien distincts : le touriste venu découvrir la Côte Bleue et le voyageur professionnel en mission sur la zone industrielle de Fos-sur-Mer. Une <strong>conciergerie Port-de-Bouc</strong> performante sait adapter chaque détail de l'accueil à ces deux réalités, sans jamais sacrifier la qualité pour l'un au détriment de l'autre. Le résultat ? De meilleurs avis, un taux d'occupation plus régulier et des revenus lissés sur toute l'année.</p>
+
+<h2>Deux profils de voyageurs, deux attentes à Port-de-Bouc</h2>
+
+<p>Comprendre la spécificité de Port-de-Bouc, c'est d'abord admettre que cette commune ne vit pas que du tourisme estival. Sa proximité avec la zone industrialo-portuaire de Fos-sur-Mer génère un flux constant de techniciens, ingénieurs et intérimaires qui cherchent un hébergement confortable pour des séjours de quelques jours à plusieurs semaines.</p>
+
+<h3>Le touriste de passage : expérience locale et convivialité</h3>
+<ul>
+<li>Il recherche un cadre agréable, des recommandations de restaurants, des idées de balades vers les calanques ou le port.</li>
+<li>Il accorde beaucoup d'importance aux photos de l'annonce, à la décoration et aux petites attentions (guide d'accueil, produits locaux).</li>
+<li>Ses séjours sont courts, souvent le week-end ou pendant les vacances scolaires.</li>
+<li>Il laisse facilement un avis détaillé, positif ou négatif, sur Airbnb ou Booking.</li>
+</ul>
+
+<h3>Le voyageur professionnel : efficacité et fiabilité</h3>
+<ul>
+<li>Il a besoin d'un espace de travail fonctionnel, d'une bonne connexion Wi-Fi et d'un check-in flexible adapté à ses horaires de chantier.</li>
+<li>La propreté irréprochable du linge et la disponibilité d'équipements pratiques (machine à laver, parking) comptent davantage que la décoration.</li>
+<li>Ses séjours sont plus longs, souvent en semaine, parfois reconduits plusieurs fois.</li>
+<li>Il privilégie la réservation directe ou via sa société, et revient volontiers si l'expérience est satisfaisante.</li>
+</ul>
+
+<h2>Comment une conciergerie réactive à Port-de-Bouc adapte l'accueil</h2>
+
+<p>Un accueil standardisé ne suffit pas. La différence se joue dans la capacité à personnaliser chaque séjour selon le profil du voyageur, et ce dès la réservation confirmée.</p>
+
+<h3>Avant l'arrivée : anticiper les besoins</h3>
+<p>Dès qu'une réservation tombe, le premier réflexe est d'identifier le type de voyageur. Un message de bienvenue personnalisé permet de poser les bonnes questions : heure d'arrivée, besoin de parking, préférences particulières. Pour un touriste, on prépare un livret d'accueil avec les pépites locales. Pour un professionnel, on s'assure que le bureau est dégagé, que le Wi-Fi est opérationnel et que les draps sont en nombre suffisant pour un séjour prolongé.</p>
+
+<h3>Le jour J : un accueil voyageurs sans accroc</h3>
+<p>Les arrivées tardives sont fréquentes chez les voyageurs professionnels à Port-de-Bouc, surtout ceux qui terminent leur journée sur le site de Fos. Une boîte à clés sécurisée ou un accès autonome bien expliqué évite toute frustration. Pour les familles en vacances, un accueil en personne reste un vrai plus : il crée un lien humain qui se traduit presque toujours par un avis cinq étoiles.</p>
+
+<h3>Pendant le séjour : réactivité et suivi</h3>
+<p>Un problème de chauffe-eau à 22 h, une question sur les horaires de marché, un besoin de ménage intermédiaire pour un séjour long : la réactivité fait toute la différence. Une conciergerie locale, implantée sur le territoire, peut intervenir rapidement là où un prestataire distant ne pourra qu'envoyer un message d'excuse.</p>
+
+<h2>L'impact direct sur la rentabilité de votre location saisonnière à Port-de-Bouc</h2>
+
+<p>Beaucoup de propriétaires concentrent leurs efforts sur la haute saison. C'est une erreur. Les voyageurs professionnels à Port-de-Bouc permettent de remplir un calendrier d'octobre à mai, période où les touristes se font rares. En adaptant l'offre à ces deux clientèles, tu peux viser un taux d'occupation supérieur à 70 % sur l'année.</p>
+
+<p>Voici ce que cela change concrètement :</p>
+<ul>
+<li><strong>Moins de vacance locative :</strong> les semaines creuses sont comblées par les séjours professionnels.</li>
+<li><strong>Des avis plus nombreux et diversifiés :</strong> chaque profil laisse des commentaires qui rassurent les suivants.</li>
+<li><strong>Une fidélisation naturelle :</strong> un professionnel satisfait reviendra à chaque mission, parfois pendant des mois.</li>
+<li><strong>Une annonce mieux référencée :</strong> les algorithmes d'Airbnb et de <a href='https://www.booking.com/' rel='nofollow'>Booking</a> favorisent les logements régulièrement réservés et bien notés.</li>
+</ul>
+
+<h2>Ce qui distingue un accompagnement local sur Port-de-Bouc</h2>
+
+<p>Port-de-Bouc n'est ni Marseille ni Aix-en-Provence. Les codes y sont différents, les attentes aussi. Un prestataire qui connaît la ville sait que le marché du vendredi matin est un incontournable à recommander aux touristes, que le parking gratuit près du port rassure les professionnels venus en voiture, et que certaines résidences nécessitent un double de badge pour l'accès.</p>
+
+<p>Cette connaissance du terrain ne s'improvise pas. Elle se construit par la présence quotidienne, les retours d'expérience et un réseau local de prestataires fiables pour le ménage, le linge et la maintenance légère.</p>
+
+<h2>Déléguer sans perdre le contrôle</h2>
+
+<p>Confier son logement à une conciergerie, ce n'est pas abandonner la maîtrise de son bien. C'est s'entourer d'une équipe qui coordonne les arrivées, prépare le logement entre chaque séjour, optimise l'annonce en fonction des retours voyageurs et assure un suivi des réservations transparent.</p>
+
+<p>Tu restes propriétaire, tu décides des tarifs et des périodes de disponibilité. La conciergerie s'occupe de tout le reste : la logistique, la communication avec les voyageurs, la blanchisserie, la photographie professionnelle et l'entretien courant.</p>
+
+<h2>Prêt à accueillir tous les voyageurs à Port-de-Bouc ?</h2>
+
+<p>Que ton logement attire des vacanciers curieux ou des professionnels en déplacement, chaque séjour mérite la même attention. Chez <a href='/'>D'Home Conciergerie</a>, nous intervenons à Port-de-Bouc avec une approche locale, réactive et adaptée à chaque profil de voyageur. Contacte-nous pour en discuter : un simple échange suffit souvent à identifier ce qui pourrait transformer ton logement en véritable référence sur le secteur.</p></div>
+    <div class="edit-hint">✏️ Corrigez le texte ici si besoin, puis cliquez sur « Copier l'article » et collez-le dans le corps de votre article Simplebo. La mise en forme est conservée.</div>
+  </div>
+
+  <div class="footer">
+    Généré automatiquement par Mon Site En Ligne · Ne pas partager ce lien
+  </div>
+
+</div>
+
+<script>
+function flash(btn, label) {
+  btn.innerHTML = '✅ Copié !';
+  btn.classList.add('copied');
+  setTimeout(function () { btn.innerHTML = label; btn.classList.remove('copied'); }, 3000);
+}
+
+function selectAndCopy(el) {
+  var range = document.createRange();
+  range.selectNodeContents(el);
+  var sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try { document.execCommand('copy'); } catch (e) {}
+  sel.removeAllRanges();
+}
+
+function copyRich(btn) {
+  var el = document.getElementById('article-preview');
+  var html = el.innerHTML.trim();
+  var text = el.innerText.trim();
+  if (navigator.clipboard && window.ClipboardItem) {
+    var item = new ClipboardItem({
+      'text/html': new Blob([html], { type: 'text/html' }),
+      'text/plain': new Blob([text], { type: 'text/plain' })
+    });
+    navigator.clipboard.write([item]).then(function () {
+      flash(btn, '📋 Copier l\'article');
+    }).catch(function () { selectAndCopy(el); flash(btn, '📋 Copier l\'article'); });
+  } else {
+    selectAndCopy(el);
+    flash(btn, '📋 Copier l\'article');
+  }
+}
+
+function copyHtml(btn) {
+  var html = document.getElementById('article-preview').innerHTML.trim();
+  navigator.clipboard.writeText(html).then(function () {
+    flash(btn, '&lt;/&gt; Copier le code HTML');
+  }).catch(function () {
+    var ta = document.createElement('textarea');
+    ta.value = html; document.body.appendChild(ta); ta.select();
+    document.execCommand('copy'); document.body.removeChild(ta);
+    flash(btn, '&lt;/&gt; Copier le code HTML');
+  });
+}
+</script>
+
+</body>
+</html>
