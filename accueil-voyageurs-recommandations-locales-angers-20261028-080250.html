@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accueil personnalisé et recommandations locales : comment enchanter vos voyageurs à Angers</title>
+<style>
+  :root { --accent: #2563EB; --accent-dark: #1d4ed8; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', Arial, sans-serif; background: #f0f2f5; min-height: 100vh; padding: 40px 20px; }
+  .container { max-width: 860px; margin: 0 auto; }
+  .header { text-align: center; margin-bottom: 40px; }
+  .header .badge { display: inline-block; background: #e8f0fe; color: var(--accent); font-size: 12px; font-weight: 600; padding: 6px 16px; border-radius: 20px; margin-bottom: 16px; letter-spacing: 1px; text-transform: uppercase; }
+  .header h1 { font-size: 28px; font-weight: 700; color: #1a1a1a; line-height: 1.3; margin-bottom: 8px; }
+  .header .meta { font-size: 14px; color: #888; }
+  .card { background: #fff; border-radius: 16px; box-shadow: 0 2px 20px rgba(0,0,0,0.06); overflow: hidden; margin-bottom: 24px; }
+  .card-header { padding: 20px 24px; border-bottom: 1px solid #f0f0f0; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .card-header h2 { font-size: 15px; font-weight: 600; color: #444; display: flex; align-items: center; gap: 8px; }
+  .card-header h2 span { font-size: 18px; }
+  .btn-copy { background: var(--accent); color: #fff; border: none; padding: 10px 20px; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: background 0.2s; }
+  .btn-copy:hover { background: var(--accent-dark); }
+  .btn-copy.copied { background: #27ae60; }
+  .preview { padding: 28px 32px; font-size: 15px; line-height: 1.75; color: #2a2a2a; outline: none; }
+  .preview:focus { box-shadow: inset 0 0 0 2px #e8f0fe; }
+  .preview h2 { font-size: 20px; margin: 22px 0 10px; line-height: 1.35; }
+  .preview h3 { font-size: 17px; margin: 18px 0 8px; }
+  .preview p { margin: 0 0 14px; }
+  .preview ul { margin: 0 0 14px 20px; }
+  .preview li { margin-bottom: 6px; }
+  .preview a { color: var(--accent); }
+  .edit-hint { font-size: 12px; color: #aaa; padding: 0 32px 20px; }
+  .instructions { background: #fff; border-radius: 16px; box-shadow: 0 2px 20px rgba(0,0,0,0.06); padding: 24px; }
+  .instructions h3 { font-size: 15px; font-weight: 600; color: #444; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+  .steps { list-style: none; }
+  .steps li { display: flex; align-items: flex-start; gap: 12px; padding: 10px 0; border-bottom: 1px solid #f5f5f5; font-size: 14px; color: #555; }
+  .steps li:last-child { border-bottom: none; }
+  .step-num { background: var(--accent); color: #fff; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0; }
+  .footer { text-align: center; margin-top: 32px; font-size: 12px; color: #aaa; }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="header">
+    <div class="badge">📝 Article prêt à relire</div>
+    <h1>Accueil personnalisé et recommandations locales : comment enchanter vos voyageurs à Angers</h1>
+    <div class="meta">Généré automatiquement · À relire puis publier sur votre blog</div>
+  </div>
+
+  <div style="background:#fff; border-radius:16px; box-shadow:0 2px 20px rgba(0,0,0,0.06); padding:24px; margin-bottom:24px;">
+    <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:#888; margin-bottom:8px;">Titre de l'article</div>
+    <div style="font-size:16px; font-weight:700; color:#1a1a1a; margin-bottom:20px; padding:12px 16px; background:#f8f8f8; border-radius:8px; border-left:3px solid var(--accent);">Accueil personnalisé et recommandations locales : comment enchanter vos voyageurs à Angers</div>
+    <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:#888; margin-bottom:8px;">Tags suggérés</div>
+    <div style="font-size:14px; color:#1a1a1a; padding:12px 16px; background:#f8f8f8; border-radius:8px; border-left:3px solid #27ae60;">gestion voyageurs Airbnb Angers</div>
+  </div>
+
+  <div style="background:#fff; border-radius:16px; box-shadow:0 2px 20px rgba(0,0,0,0.06); padding:24px; margin-bottom:24px;">
+    <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:#888; margin-bottom:12px;">Image suggérée</div>
+    <img src="https://images.pexels.com/photos/9462347/pexels-photo-9462347.jpeg?auto=compress&cs=tinysrgb&h=650&w=940&fm=jpg&dl=image.jpg" alt="Image suggérée" style="width:100%; height:auto; border-radius:10px; display:block;">
+    <div style="font-size:12px; color:#aaa; margin-top:10px;">Photo : Liliana Drew · Pexels</div>
+  </div>
+
+  <div class="instructions">
+    <h3>📋 Comment publier sur Simplebo</h3>
+
+    <a href="https://www.loom.com/share/cbcd3f9580ef46e5ad5c27c18b121676" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:8px; background:var(--accent, #2563EB); color:#fff; text-decoration:none; padding:11px 20px; border-radius:8px; font-size:14px; font-weight:600; margin-bottom:16px;">▶️ Voir le tutoriel vidéo</a>
+
+    <ol class="steps">
+      <li><div class="step-num">1</div><div>Connectez-vous à votre espace <strong>Simplebo</strong> et créez un <strong>nouvel article</strong></div></li>
+      <li><div class="step-num">2</div><div>Ajoutez le <strong>titre</strong>, les <strong>tags</strong> et la <strong>catégorie</strong></div></li>
+      <li><div class="step-num">3</div><div><strong>Relisez et corrigez</strong> le texte directement dans l'aperçu ci-dessous</div></li>
+      <li><div class="step-num">4</div><div>Cliquez sur <strong>Copier l'article</strong> puis collez dans le corps de l'article (la mise en forme est conservée)</div></li>
+      <li><div class="step-num">5</div><div>Si la couleur ne passe pas, utilisez plutôt <strong>Copier le code HTML</strong> dans la section HTML de Simplebo</div></li>
+      <li><div class="step-num">6</div><div>Cliquez sur <strong>Publier</strong> ✅</div></li>
+    </ol>
+  </div>
+
+  <div class="card" style="margin-top:24px;">
+    <div class="card-header">
+      <h2><span>👀</span> Aperçu de l'article (modifiable)</h2>
+      <div style="display:flex; gap:8px; flex-wrap:wrap;">
+        <button class="btn-copy" onclick="copyRich(this)">📋 Copier l'article</button>
+        <button class="btn-copy" style="background:#888;" onclick="copyHtml(this)">&lt;/&gt; Copier le code HTML</button>
+      </div>
+    </div>
+    <div id="article-preview" class="preview" contenteditable="true"><p>À Angers, chaque voyageur qui franchit la porte d'un logement en location courte durée arrive avec des attentes précises. L'accompagnement des voyageurs Airbnb à Angers ne se limite pas à remettre des clés et à envoyer un code Wi-Fi. C'est une expérience complète, pensée en amont, qui commence bien avant l'arrivée et se prolonge après le départ. Un accueil soigné, des recommandations locales pertinentes et une attention sincère font toute la différence entre un séjour correct et un séjour mémorable.</p>
+
+<h2>Pourquoi l'accueil personnalisé change tout en location courte durée</h2>
+
+<p>Les voyageurs qui réservent sur Airbnb ou Booking recherchent davantage qu'un simple hébergement. Ils veulent se sentir attendus, guidés, considérés. Un accueil personnalisé crée une première impression forte, et cette impression conditionne l'ensemble du séjour.</p>
+
+<h3>Le premier contact : poser les bases de la confiance</h3>
+
+<p>Tout commence par la communication entre l'hôte et le voyageur. Un message envoyé rapidement après la réservation, clair et chaleureux, rassure immédiatement. Voici les éléments à intégrer dès ce premier échange :</p>
+
+<ul>
+<li>Un mot de bienvenue personnalisé, en mentionnant le prénom du voyageur</li>
+<li>Les informations pratiques d'accès au logement</li>
+<li>Une question ouverte sur le motif du séjour (tourisme, déplacement professionnel, visite familiale)</li>
+<li>La disponibilité pour répondre à toute question avant l'arrivée</li>
+</ul>
+
+<p>Cette approche simple transforme un échange transactionnel en une vraie relation humaine. Le voyageur se sent pris en charge, pas traité comme un numéro de réservation.</p>
+
+<h3>L'arrivée : un moment décisif</h3>
+
+<p>Que l'accueil soit physique ou autonome via une boîte à clés, le logement doit parler de lui-même dès l'entrée. Un intérieur impeccable, une température agréable, un petit mot manuscrit sur la table ou un produit local en cadeau de bienvenue : ces détails paraissent anodins, mais ils marquent les esprits. À Angers, offrir un Cointreau miniature ou quelques rillauds du coin est un geste simple qui ancre le séjour dans le territoire.</p>
+
+<h2>Recommandations locales à Angers : votre meilleur atout pour enchanter vos voyageurs</h2>
+
+<p>Les voyageurs veulent vivre Angers comme un habitant, pas comme un touriste perdu. Leur proposer un guide de recommandations locales soigné est l'un des leviers les plus puissants pour obtenir des avis cinq étoiles.</p>
+
+<h3>Construire un livret d'accueil vraiment utile</h3>
+
+<p>Oubliez les livrets génériques copiés depuis un site touristique. Un bon livret d'accueil est personnel, testé et sincère. Il reflète vos propres coups de cœur et ceux de votre quartier. Structurez-le autour de catégories concrètes :</p>
+
+<ul>
+<li><strong>Restaurants et bistrots</strong> : mentionnez deux ou trois adresses par gamme de prix, avec un commentaire personnel sur ce que vous y aimez</li>
+<li><strong>Cafés et brunchs</strong> : les voyageurs cherchent souvent un bon café le matin, indiquez ceux qui sont accessibles à pied depuis le logement</li>
+<li><strong>Marchés</strong> : le marché de la place Lafayette le samedi matin est incontournable, précisez les horaires exacts</li>
+<li><strong>Visites culturelles</strong> : le Château d'Angers et la Tenture de l'Apocalypse, la Galerie David d'Angers, le Musée Jean-Lurçat</li>
+<li><strong>Balades nature</strong> : les bords de Maine, l'île Saint-Aubin, le parc de Balzac, le lac de Maine</li>
+<li><strong>Sorties et vie nocturne</strong> : bars à vins du centre-ville, salles de spectacle comme Le Quai</li>
+<li><strong>Transports</strong> : fonctionnement du tramway Irigo, stations de vélos en libre-service</li>
+</ul>
+
+<p>Chaque recommandation gagne en crédibilité quand elle est accompagnée d'une anecdote ou d'un conseil pratique. Par exemple : « Chez Arlequin, demandez la table côté jardin si vous venez en été. »</p>
+
+<h3>Adapter les conseils au profil du voyageur</h3>
+
+<p>C'est ici que la personnalisation prend tout son sens. Un couple en escapade romantique n'a pas les mêmes attentes qu'une famille avec enfants ou qu'un professionnel en déplacement. Si vous avez posé la bonne question lors du premier contact, vous pouvez adapter vos suggestions :</p>
+
+<ul>
+<li>Pour les familles : Terra Botanica, les guinguettes en bord de Loire en été, les aires de jeux du parc de Balzac</li>
+<li>Pour les couples : restaurants intimistes, promenade au coucher du soleil sur les quais, dégustation de vins d'Anjou</li>
+<li>Pour les professionnels : restaurants rapides de qualité à proximité, espaces de coworking, horaires de trains vers Paris</li>
+</ul>
+
+<p>Un voyageur qui reçoit des recommandations adaptées à sa situation se sent compris. Et un voyageur compris laisse un avis enthousiaste.</p>
+
+<h2>La communication pendant le séjour : trouver le bon équilibre</h2>
+
+<p>Répondre aux voyageurs Airbnb ne signifie pas les harceler de messages. Il s'agit de trouver le juste milieu entre disponibilité et discrétion.</p>
+
+<h3>Le message du lendemain</h3>
+
+<p>Un court message envoyé le lendemain de l'arrivée fait des merveilles. Il montre que vous êtes attentif sans être envahissant. Quelque chose comme : « Bonjour Marie, j'espère que votre première nuit s'est bien passée. N'hésitez pas si vous avez la moindre question sur le logement ou sur Angers ! » Ce geste simple permet aussi de détecter un éventuel problème avant qu'il ne devienne une frustration.</p>
+
+<h3>La réactivité, facteur clé de satisfaction</h3>
+
+<p>Selon les données partagées par <a href='https://www.airbnb.fr/help/article/1257' rel='nofollow'>Airbnb dans ses recommandations aux hôtes</a>, un temps de réponse inférieur à une heure améliore significativement le classement de l'annonce et la satisfaction globale des voyageurs. Être réactif ne veut pas dire être disponible 24 heures sur 24 en personne. Cela implique d'avoir un système fiable, que ce soit via des réponses automatisées intelligentes ou un partenaire de confiance qui prend le relais.</p>
+
+<h2>Satisfaction client et avis : le cercle vertueux</h2>
+
+<p>Un accueil personnalisé et des recommandations locales pertinentes ne sont pas de simples gestes sympathiques. Ils constituent un levier direct pour obtenir de bons avis Airbnb à Angers, ce qui améliore la visibilité de l'annonce, augmente le taux de réservation et, par conséquent, la rentabilité du logement.</p>
+
+<p>Les voyageurs qui se sentent bien accueillis pardonnent plus facilement un petit défaut (un robinet un peu capricieux, un canapé vieillissant). En revanche, un accueil froid ou absent amplifie chaque imperfection dans l'esprit du voyageur au moment de rédiger son commentaire.</p>
+
+<h3>Encourager l'avis sans insister</h3>
+
+<p>Au moment du départ, un message de remerciement sincère suffit. Remerciez le voyageur pour sa visite, souhaitez-lui une bonne suite et mentionnez que vous seriez heureux de lire son retour d'expérience. Jamais de pression, jamais de formulation qui ressemble à une demande insistante.</p>
+
+<h2>Déléguer l'accueil sans perdre en qualité</h2>
+
+<p>Offrir ce niveau de service demande du temps, de l'organisation et une connaissance fine du terrain angevin. Beaucoup de propriétaires souhaitent proposer cette qualité d'expérience mais n'ont pas la disponibilité nécessaire, surtout lorsqu'ils cumulent plusieurs logements ou habitent loin d'Angers.</p>
+
+<p>C'est précisément là qu'intervient une conciergerie spécialisée. <a href='/'>LOKA Conciergerie</a> assure l'accueil des voyageurs, la coordination des arrivées et des départs, la préparation du logement et la communication avec chaque hôte sur l'ensemble du séjour. Le livret d'accueil, les recommandations locales, la réactivité aux messages : tout est pris en charge avec un ancrage local fort, puisque l'équipe vit et travaille à Angers.</p>
+
+<p>Confier l'intendance de votre logement à des professionnels qui connaissent la ville sur le bout des doigts, c'est garantir à chaque voyageur une expérience authentique, cohérente et mémorable. Et pour vous, c'est la certitude que votre bien est entre de bonnes mains, sans y consacrer vos soirées ni vos week-ends.</p>
+
+<p>Envie d'offrir à vos voyageurs un accueil à la hauteur d'Angers ? Contactez LOKA Conciergerie pour découvrir comment transformer chaque séjour en une expérience cinq étoiles.</p></div>
+    <div class="edit-hint">✏️ Corrigez le texte ici si besoin, puis cliquez sur « Copier l'article » et collez-le dans le corps de votre article Simplebo. La mise en forme est conservée.</div>
+  </div>
+
+  <div class="footer">
+    Généré automatiquement par Mon Site En Ligne · Ne pas partager ce lien
+  </div>
+
+</div>
+
+<script>
+function flash(btn, label) {
+  btn.innerHTML = '✅ Copié !';
+  btn.classList.add('copied');
+  setTimeout(function () { btn.innerHTML = label; btn.classList.remove('copied'); }, 3000);
+}
+
+function selectAndCopy(el) {
+  var range = document.createRange();
+  range.selectNodeContents(el);
+  var sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try { document.execCommand('copy'); } catch (e) {}
+  sel.removeAllRanges();
+}
+
+function copyRich(btn) {
+  var el = document.getElementById('article-preview');
+  var html = el.innerHTML.trim();
+  var text = el.innerText.trim();
+  if (navigator.clipboard && window.ClipboardItem) {
+    var item = new ClipboardItem({
+      'text/html': new Blob([html], { type: 'text/html' }),
+      'text/plain': new Blob([text], { type: 'text/plain' })
+    });
+    navigator.clipboard.write([item]).then(function () {
+      flash(btn, '📋 Copier l\'article');
+    }).catch(function () { selectAndCopy(el); flash(btn, '📋 Copier l\'article'); });
+  } else {
+    selectAndCopy(el);
+    flash(btn, '📋 Copier l\'article');
+  }
+}
+
+function copyHtml(btn) {
+  var html = document.getElementById('article-preview').innerHTML.trim();
+  navigator.clipboard.writeText(html).then(function () {
+    flash(btn, '&lt;/&gt; Copier le code HTML');
+  }).catch(function () {
+    var ta = document.createElement('textarea');
+    ta.value = html; document.body.appendChild(ta); ta.select();
+    document.execCommand('copy'); document.body.removeChild(ta);
+    flash(btn, '&lt;/&gt; Copier le code HTML');
+  });
+}
+</script>
+
+</body>
+</html>
