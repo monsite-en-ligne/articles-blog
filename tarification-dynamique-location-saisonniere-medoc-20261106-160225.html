@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tarification dynamique en location saisonnière : comment optimiser chaque nuitée dans le Médoc</title>
+<style>
+  :root { --accent: #2563EB; --accent-dark: #1d4ed8; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', Arial, sans-serif; background: #f0f2f5; min-height: 100vh; padding: 40px 20px; }
+  .container { max-width: 860px; margin: 0 auto; }
+  .header { text-align: center; margin-bottom: 40px; }
+  .header .badge { display: inline-block; background: #e8f0fe; color: var(--accent); font-size: 12px; font-weight: 600; padding: 6px 16px; border-radius: 20px; margin-bottom: 16px; letter-spacing: 1px; text-transform: uppercase; }
+  .header h1 { font-size: 28px; font-weight: 700; color: #1a1a1a; line-height: 1.3; margin-bottom: 8px; }
+  .header .meta { font-size: 14px; color: #888; }
+  .card { background: #fff; border-radius: 16px; box-shadow: 0 2px 20px rgba(0,0,0,0.06); overflow: hidden; margin-bottom: 24px; }
+  .card-header { padding: 20px 24px; border-bottom: 1px solid #f0f0f0; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .card-header h2 { font-size: 15px; font-weight: 600; color: #444; display: flex; align-items: center; gap: 8px; }
+  .card-header h2 span { font-size: 18px; }
+  .btn-copy { background: var(--accent); color: #fff; border: none; padding: 10px 20px; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: background 0.2s; }
+  .btn-copy:hover { background: var(--accent-dark); }
+  .btn-copy.copied { background: #27ae60; }
+  .preview { padding: 28px 32px; font-size: 15px; line-height: 1.75; color: #2a2a2a; outline: none; }
+  .preview:focus { box-shadow: inset 0 0 0 2px #e8f0fe; }
+  .preview h2 { font-size: 20px; margin: 22px 0 10px; line-height: 1.35; }
+  .preview h3 { font-size: 17px; margin: 18px 0 8px; }
+  .preview p { margin: 0 0 14px; }
+  .preview ul { margin: 0 0 14px 20px; }
+  .preview li { margin-bottom: 6px; }
+  .preview a { color: var(--accent); }
+  .edit-hint { font-size: 12px; color: #aaa; padding: 0 32px 20px; }
+  .instructions { background: #fff; border-radius: 16px; box-shadow: 0 2px 20px rgba(0,0,0,0.06); padding: 24px; }
+  .instructions h3 { font-size: 15px; font-weight: 600; color: #444; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+  .steps { list-style: none; }
+  .steps li { display: flex; align-items: flex-start; gap: 12px; padding: 10px 0; border-bottom: 1px solid #f5f5f5; font-size: 14px; color: #555; }
+  .steps li:last-child { border-bottom: none; }
+  .step-num { background: var(--accent); color: #fff; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0; }
+  .footer { text-align: center; margin-top: 32px; font-size: 12px; color: #aaa; }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="header">
+    <div class="badge">📝 Article prêt à relire</div>
+    <h1>Tarification dynamique en location saisonnière : comment optimiser chaque nuitée dans le Médoc</h1>
+    <div class="meta">Généré automatiquement · À relire puis publier sur votre blog</div>
+  </div>
+
+  <div style="background:#fff; border-radius:16px; box-shadow:0 2px 20px rgba(0,0,0,0.06); padding:24px; margin-bottom:24px;">
+    <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:#888; margin-bottom:8px;">Titre de l'article</div>
+    <div style="font-size:16px; font-weight:700; color:#1a1a1a; margin-bottom:20px; padding:12px 16px; background:#f8f8f8; border-radius:8px; border-left:3px solid var(--accent);">Tarification dynamique en location saisonnière : comment optimiser chaque nuitée dans le Médoc</div>
+    <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:#888; margin-bottom:8px;">Tags suggérés</div>
+    <div style="font-size:14px; color:#1a1a1a; padding:12px 16px; background:#f8f8f8; border-radius:8px; border-left:3px solid #27ae60;">maximiser revenus location courte durée Médoc</div>
+  </div>
+
+  <div style="background:#fff; border-radius:16px; box-shadow:0 2px 20px rgba(0,0,0,0.06); padding:24px; margin-bottom:24px;">
+    <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:#888; margin-bottom:12px;">Image suggérée</div>
+    <img src="https://images.pexels.com/photos/18602866/pexels-photo-18602866.jpeg?auto=compress&cs=tinysrgb&h=650&w=940&fm=jpg&dl=image.jpg" alt="Image suggérée" style="width:100%; height:auto; border-radius:10px; display:block;">
+    <div style="font-size:12px; color:#aaa; margin-top:10px;">Photo : Archie McNicol · Pexels</div>
+  </div>
+
+  <div class="instructions">
+    <h3>📋 Comment publier sur Simplebo</h3>
+
+    <a href="https://www.loom.com/share/cbcd3f9580ef46e5ad5c27c18b121676" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:8px; background:var(--accent, #2563EB); color:#fff; text-decoration:none; padding:11px 20px; border-radius:8px; font-size:14px; font-weight:600; margin-bottom:16px;">▶️ Voir le tutoriel vidéo</a>
+
+    <ol class="steps">
+      <li><div class="step-num">1</div><div>Connectez-vous à votre espace <strong>Simplebo</strong> et créez un <strong>nouvel article</strong></div></li>
+      <li><div class="step-num">2</div><div>Ajoutez le <strong>titre</strong>, les <strong>tags</strong> et la <strong>catégorie</strong></div></li>
+      <li><div class="step-num">3</div><div><strong>Relisez et corrigez</strong> le texte directement dans l'aperçu ci-dessous</div></li>
+      <li><div class="step-num">4</div><div>Cliquez sur <strong>Copier l'article</strong> puis collez dans le corps de l'article (la mise en forme est conservée)</div></li>
+      <li><div class="step-num">5</div><div>Si la couleur ne passe pas, utilisez plutôt <strong>Copier le code HTML</strong> dans la section HTML de Simplebo</div></li>
+      <li><div class="step-num">6</div><div>Cliquez sur <strong>Publier</strong> ✅</div></li>
+    </ol>
+  </div>
+
+  <div class="card" style="margin-top:24px;">
+    <div class="card-header">
+      <h2><span>👀</span> Aperçu de l'article (modifiable)</h2>
+      <div style="display:flex; gap:8px; flex-wrap:wrap;">
+        <button class="btn-copy" onclick="copyRich(this)">📋 Copier l'article</button>
+        <button class="btn-copy" style="background:#888;" onclick="copyHtml(this)">&lt;/&gt; Copier le code HTML</button>
+      </div>
+    </div>
+    <div id="article-preview" class="preview" contenteditable="true"><p>Pour maximiser revenus location courte durée Médoc, la fixation du prix ne peut plus être approximative. Chaque nuitée représente une opportunité de revenu unique, conditionnée par la saison, la météo, les événements locaux et la pression concurrentielle. La tarification dynamique transforme cette complexité en levier de performance. Plutôt que d'appliquer un tarif fixe toute l'année, cette approche ajuste le prix de chaque nuit en temps réel, à la manière des compagnies aériennes ou des hôtels. Dans le Médoc, où la saisonnalité est marquée et les profils de voyageurs variés, cette méthode fait souvent la différence entre un bien rentable et un bien sous-exploité.</p>
+
+<h2>Qu'est-ce que la tarification dynamique en location saisonnière ?</h2>
+
+<p>La tarification dynamique consiste à faire varier le prix d'une nuitée en fonction de critères objectifs analysés en continu. Contrairement à un tarif saisonnier classique (haute saison / basse saison), elle s'appuie sur des données en temps réel pour définir le prix optimal à un instant donné.</p>
+
+<h3>Les paramètres qui influencent le prix</h3>
+
+<ul>
+<li><strong>La demande locale :</strong> nombre de recherches sur les plateformes pour votre zone géographique à une date précise.</li>
+<li><strong>Le taux d'occupation des hébergements concurrents :</strong> plus les logements alentour sont réservés, plus votre prix peut augmenter.</li>
+<li><strong>Les événements :</strong> Marathon du Médoc, fêtes de la vigne, salons viticoles, ponts et vacances scolaires.</li>
+<li><strong>Le délai avant la date de séjour :</strong> une nuit non réservée à J-3 ne vaut pas la même chose qu'à J-30.</li>
+<li><strong>La météo et la saisonnalité fine :</strong> un week-end ensoleillé de mai peut générer autant de demande qu'une semaine d'août pluvieuse.</li>
+</ul>
+
+<p>L'objectif est simple : ne jamais laisser une nuit vide quand la demande existe, et ne jamais brader une nuit quand la demande est forte.</p>
+
+<h2>Pourquoi le Médoc se prête particulièrement à la tarification dynamique</h2>
+
+<p>Le Médoc n'est pas une destination à flux constant. La demande oscille fortement selon les périodes, ce qui crée à la fois des risques de vacance locative et des opportunités de revenus élevés.</p>
+
+<h3>Une saisonnalité contrastée</h3>
+
+<p>L'été concentre une part importante des réservations, portée par l'attrait de l'océan, des vignobles et du tourisme bordelais. Mais le printemps et l'automne offrent aussi des fenêtres intéressantes : séjours œnologiques, escapades nature, voyageurs étrangers décalant leurs vacances. Un tarif fixe annuel ignore ces nuances. Il sous-évalue les pics et surévalue les creux, ce qui nuit à la fois au taux d'occupation et au revenu par nuitée.</p>
+
+<h3>Des événements locaux à forte valeur</h3>
+
+<p>Le Marathon du Médoc, les journées portes ouvertes des châteaux, les festivals estivaux ou encore la Fête de la Fleur créent des pics de demande localisés sur quelques jours. Sans ajustement tarifaire, vous passez à côté de revenus significatifs. Un logement bien positionné peut facturer 40 à 60 % de plus lors de ces événements, sans impacter la satisfaction voyageur, car la demande dépasse largement l'offre.</p>
+
+<h2>Logiciels de tarification dynamique : lesquels choisir ?</h2>
+
+<p>Plusieurs outils spécialisés permettent d'automatiser l'ajustement des prix. Ils se connectent à vos annonces sur Airbnb, Booking ou Abritel et modifient les tarifs selon leurs algorithmes.</p>
+
+<h3>Les solutions les plus utilisées en France</h3>
+
+<ul>
+<li><strong><a href='https://www.pricelabs.co/' rel='nofollow'>PriceLabs</a> :</strong> référence internationale, très utilisée par les conciergeries professionnelles. Interface riche, personnalisation fine des règles tarifaires, excellente couverture des données françaises.</li>
+<li><strong>Beyond Pricing :</strong> approche plus automatisée, idéale pour les propriétaires qui souhaitent déléguer entièrement la stratégie tarifaire.</li>
+<li><strong>Wheelhouse :</strong> propose un bon équilibre entre contrôle manuel et recommandations algorithmiques.</li>
+</ul>
+
+<p>Ces logiciels de tarification dynamique location saisonnière ne remplacent pas l'expertise humaine. Ils fournissent une base solide que l'on affine ensuite avec la connaissance du terrain, des spécificités du bien et du comportement des voyageurs dans le Médoc.</p>
+
+<h3>Ce que les algorithmes ne voient pas</h3>
+
+<p>Un algorithme analyse la data. Il ne sait pas que votre maison dispose d'une vue exceptionnelle sur les vignes, que votre piscine justifie un supplément en juin, ou que votre quartier est particulièrement recherché par les familles. L'intervention humaine reste indispensable pour calibrer les prix planchers, les prix plafonds et les exceptions.</p>
+
+<h2>Tarification dynamique et taux d'occupation : trouver le bon équilibre</h2>
+
+<p>Optimiser le prix nuitée Airbnb Médoc ne signifie pas toujours viser le tarif le plus élevé possible. Un taux d'occupation location saisonnière Gironde trop faible, même avec des prix élevés, peut être moins rentable qu'un taux d'occupation supérieur à des prix légèrement inférieurs.</p>
+
+<h3>La notion de RevPAN (Revenue Per Available Night)</h3>
+
+<p>Le RevPAN mesure le revenu moyen généré par nuit disponible, qu'elle soit louée ou non. C'est l'indicateur clé. Prenons un exemple concret :</p>
+
+<ul>
+<li><strong>Scénario A :</strong> prix moyen de 150 €/nuit, taux d'occupation de 55 % → RevPAN = 82,50 €</li>
+<li><strong>Scénario B :</strong> prix moyen de 120 €/nuit, taux d'occupation de 78 % → RevPAN = 93,60 €</li>
+</ul>
+
+<p>Le scénario B génère davantage de revenus malgré un tarif inférieur. La tarification dynamique vise précisément cet équilibre optimal, en ajustant le curseur entre prix et occupation selon les périodes.</p>
+
+<h2>Rentabilité Airbnb vs location longue durée dans le Médoc</h2>
+
+<p>La question revient souvent : la location courte durée vaut-elle vraiment le coup face à un bail classique ? Dans le Médoc, la réponse dépend de plusieurs facteurs, mais la tarification dynamique fait pencher la balance.</p>
+
+<p>Un bien loué à l'année dans le Médoc génère un loyer stable mais souvent modeste, surtout hors agglomération bordelaise. En location courte durée bien pilotée, le même bien peut produire entre 1,5 et 3 fois plus de revenus annuels, à condition d'optimiser chaque nuitée et de maintenir un taux d'occupation satisfaisant sur l'ensemble de l'année.</p>
+
+<p>La différence se joue dans l'exécution opérationnelle : qualité de l'annonce, photos professionnelles, réactivité aux messages, propreté irréprochable, et bien sûr, stratégie tarifaire adaptée. Sans ces éléments, les revenus passifs location courte durée propriétaire restent un objectif théorique.</p>
+
+<h2>Commission conciergerie vs revenus générés : un calcul qui parle</h2>
+
+<p>Certains propriétaires hésitent à confier leur bien à une conciergerie en raison de la commission. C'est une réflexion légitime, mais souvent incomplète.</p>
+
+<p>Un propriétaire qui pilote seul son bien, sans outil de tarification dynamique ni connaissance fine du marché local, laisse en moyenne 15 à 25 % de revenus potentiels sur la table. Entre les nuits sous-tarifées, les créneaux vides faute de réactivité et les annonces mal optimisées, le manque à gagner dépasse fréquemment le montant de la commission.</p>
+
+<p>Faire appel à une conciergerie spécialisée dans le Médoc, c'est accéder à des outils professionnels, à une expertise tarifaire locale et à une coordination opérationnelle complète : accueil voyageurs, ménage, linge, maintenance, suivi des réservations sur les plateformes. Le propriétaire conserve la maîtrise de son bien tout en bénéficiant d'un accompagnement qui se traduit directement dans les résultats financiers.</p>
+
+<h2>Mettre en place une stratégie tarifaire efficace dans le Médoc</h2>
+
+<h3>Étape 1 : analyser votre marché</h3>
+
+<p>Étudiez les logements comparables dans votre secteur (Pauillac, Lacanau, Margaux, Lesparre-Médoc). Notez les prix pratiqués par saison, les taux de remplissage visibles et les types de voyageurs ciblés.</p>
+
+<h3>Étape 2 : définir vos règles tarifaires</h3>
+
+<p>Fixez un prix plancher en dessous duquel vous ne souhaitez pas descendre. Identifiez vos périodes premium et vos périodes creuses. Paramétrez des majorations pour les événements locaux.</p>
+
+<h3>Étape 3 : connecter un outil de tarification dynamique</h3>
+
+<p>Choisissez un logiciel adapté à votre niveau d'implication. Configurez-le avec vos règles, puis laissez-le ajuster les prix quotidiennement. Surveillez les résultats chaque mois et affinez.</p>
+
+<h3>Étape 4 : mesurer et ajuster</h3>
+
+<p>Suivez votre RevPAN, votre taux d'occupation et votre revenu mensuel. Comparez avec les périodes précédentes. Les premiers résultats significatifs apparaissent généralement après deux à trois mois d'utilisation.</p>
+
+<h2>Passez à l'action pour vos revenus locatifs dans le Médoc</h2>
+
+<p>La tarification dynamique n'est plus une option réservée aux grandes structures hôtelières. C'est un levier accessible à tout propriétaire de location saisonnière dans le Médoc, à condition de s'en donner les moyens ou de s'entourer des bonnes compétences.</p>
+
+<p>Chez <a href='https://solena-conciergerie.fr/'>Soléna Conciergerie</a>, Sophie accompagne les propriétaires du Médoc et de l'agglomération bordelaise dans l'optimisation complète de leur location courte durée. De la création d'annonce à la stratégie tarifaire, en passant par l'accueil voyageurs et l'intendance quotidienne, chaque détail est pensé pour que votre bien atteigne son plein potentiel. Contactez-nous pour un échange personnalisé sur votre projet.</p></div>
+    <div class="edit-hint">✏️ Corrigez le texte ici si besoin, puis cliquez sur « Copier l'article » et collez-le dans le corps de votre article Simplebo. La mise en forme est conservée.</div>
+  </div>
+
+  <div class="footer">
+    Généré automatiquement par Mon Site En Ligne · Ne pas partager ce lien
+  </div>
+
+</div>
+
+<script>
+function flash(btn, label) {
+  btn.innerHTML = '✅ Copié !';
+  btn.classList.add('copied');
+  setTimeout(function () { btn.innerHTML = label; btn.classList.remove('copied'); }, 3000);
+}
+
+function selectAndCopy(el) {
+  var range = document.createRange();
+  range.selectNodeContents(el);
+  var sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try { document.execCommand('copy'); } catch (e) {}
+  sel.removeAllRanges();
+}
+
+function copyRich(btn) {
+  var el = document.getElementById('article-preview');
+  var html = el.innerHTML.trim();
+  var text = el.innerText.trim();
+  if (navigator.clipboard && window.ClipboardItem) {
+    var item = new ClipboardItem({
+      'text/html': new Blob([html], { type: 'text/html' }),
+      'text/plain': new Blob([text], { type: 'text/plain' })
+    });
+    navigator.clipboard.write([item]).then(function () {
+      flash(btn, '📋 Copier l\'article');
+    }).catch(function () { selectAndCopy(el); flash(btn, '📋 Copier l\'article'); });
+  } else {
+    selectAndCopy(el);
+    flash(btn, '📋 Copier l\'article');
+  }
+}
+
+function copyHtml(btn) {
+  var html = document.getElementById('article-preview').innerHTML.trim();
+  navigator.clipboard.writeText(html).then(function () {
+    flash(btn, '&lt;/&gt; Copier le code HTML');
+  }).catch(function () {
+    var ta = document.createElement('textarea');
+    ta.value = html; document.body.appendChild(ta); ta.select();
+    document.execCommand('copy'); document.body.removeChild(ta);
+    flash(btn, '&lt;/&gt; Copier le code HTML');
+  });
+}
+</script>
+
+</body>
+</html>
