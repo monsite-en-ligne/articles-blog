@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Algorithme Airbnb à Bordeaux : comment positionner votre annonce en tête des résultats</title>
+<style>
+  :root { --accent: #2563EB; --accent-dark: #1d4ed8; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', Arial, sans-serif; background: #f0f2f5; min-height: 100vh; padding: 40px 20px; }
+  .container { max-width: 860px; margin: 0 auto; }
+  .header { text-align: center; margin-bottom: 40px; }
+  .header .badge { display: inline-block; background: #e8f0fe; color: var(--accent); font-size: 12px; font-weight: 600; padding: 6px 16px; border-radius: 20px; margin-bottom: 16px; letter-spacing: 1px; text-transform: uppercase; }
+  .header h1 { font-size: 28px; font-weight: 700; color: #1a1a1a; line-height: 1.3; margin-bottom: 8px; }
+  .header .meta { font-size: 14px; color: #888; }
+  .card { background: #fff; border-radius: 16px; box-shadow: 0 2px 20px rgba(0,0,0,0.06); overflow: hidden; margin-bottom: 24px; }
+  .card-header { padding: 20px 24px; border-bottom: 1px solid #f0f0f0; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .card-header h2 { font-size: 15px; font-weight: 600; color: #444; display: flex; align-items: center; gap: 8px; }
+  .card-header h2 span { font-size: 18px; }
+  .btn-copy { background: var(--accent); color: #fff; border: none; padding: 10px 20px; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: background 0.2s; }
+  .btn-copy:hover { background: var(--accent-dark); }
+  .btn-copy.copied { background: #27ae60; }
+  .preview { padding: 28px 32px; font-size: 15px; line-height: 1.75; color: #2a2a2a; outline: none; }
+  .preview:focus { box-shadow: inset 0 0 0 2px #e8f0fe; }
+  .preview h2 { font-size: 20px; margin: 22px 0 10px; line-height: 1.35; }
+  .preview h3 { font-size: 17px; margin: 18px 0 8px; }
+  .preview p { margin: 0 0 14px; }
+  .preview ul { margin: 0 0 14px 20px; }
+  .preview li { margin-bottom: 6px; }
+  .preview a { color: var(--accent); }
+  .edit-hint { font-size: 12px; color: #aaa; padding: 0 32px 20px; }
+  .instructions { background: #fff; border-radius: 16px; box-shadow: 0 2px 20px rgba(0,0,0,0.06); padding: 24px; }
+  .instructions h3 { font-size: 15px; font-weight: 600; color: #444; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+  .steps { list-style: none; }
+  .steps li { display: flex; align-items: flex-start; gap: 12px; padding: 10px 0; border-bottom: 1px solid #f5f5f5; font-size: 14px; color: #555; }
+  .steps li:last-child { border-bottom: none; }
+  .step-num { background: var(--accent); color: #fff; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0; }
+  .footer { text-align: center; margin-top: 32px; font-size: 12px; color: #aaa; }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="header">
+    <div class="badge">📝 Article prêt à relire</div>
+    <h1>Algorithme Airbnb à Bordeaux : comment positionner votre annonce en tête des résultats</h1>
+    <div class="meta">Généré automatiquement · À relire puis publier sur votre blog</div>
+  </div>
+
+  <div style="background:#fff; border-radius:16px; box-shadow:0 2px 20px rgba(0,0,0,0.06); padding:24px; margin-bottom:24px;">
+    <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:#888; margin-bottom:8px;">Titre de l'article</div>
+    <div style="font-size:16px; font-weight:700; color:#1a1a1a; margin-bottom:20px; padding:12px 16px; background:#f8f8f8; border-radius:8px; border-left:3px solid var(--accent);">Algorithme Airbnb à Bordeaux : comment positionner votre annonce en tête des résultats</div>
+    <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:#888; margin-bottom:8px;">Tags suggérés</div>
+    <div style="font-size:14px; color:#1a1a1a; padding:12px 16px; background:#f8f8f8; border-radius:8px; border-left:3px solid #27ae60;">optimiser annonce Airbnb Bordeaux</div>
+  </div>
+
+  <div style="background:#fff; border-radius:16px; box-shadow:0 2px 20px rgba(0,0,0,0.06); padding:24px; margin-bottom:24px;">
+    <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:#888; margin-bottom:12px;">Image suggérée</div>
+    <img src="https://images.pexels.com/photos/12931939/pexels-photo-12931939.jpeg?auto=compress&cs=tinysrgb&h=650&w=940&fm=jpg&dl=image.jpg" alt="Image suggérée" style="width:100%; height:auto; border-radius:10px; display:block;">
+    <div style="font-size:12px; color:#aaa; margin-top:10px;">Photo : Andrea Davis · Pexels</div>
+  </div>
+
+  <div class="instructions">
+    <h3>📋 Comment publier sur Simplebo</h3>
+
+    <a href="https://www.loom.com/share/cbcd3f9580ef46e5ad5c27c18b121676" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:8px; background:var(--accent, #2563EB); color:#fff; text-decoration:none; padding:11px 20px; border-radius:8px; font-size:14px; font-weight:600; margin-bottom:16px;">▶️ Voir le tutoriel vidéo</a>
+
+    <ol class="steps">
+      <li><div class="step-num">1</div><div>Connectez-vous à votre espace <strong>Simplebo</strong> et créez un <strong>nouvel article</strong></div></li>
+      <li><div class="step-num">2</div><div>Ajoutez le <strong>titre</strong>, les <strong>tags</strong> et la <strong>catégorie</strong></div></li>
+      <li><div class="step-num">3</div><div><strong>Relisez et corrigez</strong> le texte directement dans l'aperçu ci-dessous</div></li>
+      <li><div class="step-num">4</div><div>Cliquez sur <strong>Copier l'article</strong> puis collez dans le corps de l'article (la mise en forme est conservée)</div></li>
+      <li><div class="step-num">5</div><div>Si la couleur ne passe pas, utilisez plutôt <strong>Copier le code HTML</strong> dans la section HTML de Simplebo</div></li>
+      <li><div class="step-num">6</div><div>Cliquez sur <strong>Publier</strong> ✅</div></li>
+    </ol>
+  </div>
+
+  <div class="card" style="margin-top:24px;">
+    <div class="card-header">
+      <h2><span>👀</span> Aperçu de l'article (modifiable)</h2>
+      <div style="display:flex; gap:8px; flex-wrap:wrap;">
+        <button class="btn-copy" onclick="copyRich(this)">📋 Copier l'article</button>
+        <button class="btn-copy" style="background:#888;" onclick="copyHtml(this)">&lt;/&gt; Copier le code HTML</button>
+      </div>
+    </div>
+    <div id="article-preview" class="preview" contenteditable="true"><p>À Bordeaux, la concurrence entre annonces de location courte durée s'intensifie chaque saison. Pour <strong>optimiser annonce Airbnb Bordeaux</strong> et apparaître dans les premiers résultats de recherche, il ne suffit plus d'avoir un joli logement. Il faut comprendre les mécanismes précis de l'algorithme de la plateforme, identifier les signaux qu'il valorise et adapter votre stratégie en conséquence. Voici un décryptage opérationnel pour positionner durablement votre bien en tête des résultats sur le marché bordelais.</p>
+
+<h2>Comment fonctionne l'algorithme Airbnb en 2024 ?</h2>
+
+<p>L'algorithme d'Airbnb repose sur un principe simple : proposer aux voyageurs les annonces les plus susceptibles de se transformer en réservation. Pour y parvenir, il analyse des dizaines de signaux en temps réel et classe les résultats selon leur probabilité de conversion. Contrairement à une idée reçue, le prix n'est pas le critère dominant. La plateforme privilégie la pertinence globale de l'annonce par rapport à la requête du voyageur.</p>
+
+<p>Les principaux facteurs pris en compte peuvent être regroupés en quatre catégories :</p>
+
+<ul>
+<li><strong>La qualité de l'annonce</strong> : photos, description, équipements renseignés, titre</li>
+<li><strong>Les performances de l'hôte</strong> : taux de réponse, rapidité, taux d'acceptation</li>
+<li><strong>Les avis voyageurs</strong> : note globale, fréquence des évaluations, commentaires récents</li>
+<li><strong>La compétitivité tarifaire</strong> : cohérence du prix avec le marché local et la saisonnalité</li>
+</ul>
+
+<p>Chacun de ces leviers peut être travaillé de manière concrète pour améliorer votre positionnement à Bordeaux.</p>
+
+<h2>Le titre de votre annonce Airbnb : premier signal de pertinence</h2>
+
+<p>Le titre est l'un des premiers éléments analysés par l'algorithme pour déterminer la correspondance avec la recherche du voyageur. Un <strong>titre annonce Airbnb optimisé</strong> doit combiner trois ingrédients : la localisation, le type de logement et un élément différenciant.</p>
+
+<h3>Exemples de titres performants pour Bordeaux</h3>
+
+<p>Plutôt que « Bel appartement centre-ville », préférez une formulation précise et évocatrice :</p>
+
+<ul>
+<li>« T2 lumineux Saint-Pierre, terrasse vue Garonne »</li>
+<li>« Maison de charme Chartrons, jardin privatif, parking »</li>
+<li>« Studio design Victoire, 2 min du tram, clim »</li>
+</ul>
+
+<p>Les quartiers bordelais ont chacun leur identité. Mentionner le nom du quartier plutôt que simplement « Bordeaux » améliore la pertinence pour les recherches ciblées.</p>
+
+<h2>Photos professionnelles : le levier de conversion le plus sous-estimé</h2>
+
+<p>L'algorithme mesure le taux de clic sur votre annonce dans les résultats de recherche. Des <strong>photos professionnelles location courte durée</strong> augmentent significativement ce taux, ce qui envoie un signal positif à la plateforme. Airbnb le confirme dans ses propres recommandations : les annonces avec des photos de qualité professionnelle reçoivent en moyenne 40 % de réservations supplémentaires.</p>
+
+<h3>Les règles d'un shooting réussi</h3>
+
+<ul>
+<li>Photographier en lumière naturelle, idéalement en fin de matinée</li>
+<li>Ranger et épurer chaque pièce avant la prise de vue</li>
+<li>Commencer par la photo la plus vendeuse (pièce de vie ou vue extérieure)</li>
+<li>Inclure au moins 20 photos couvrant chaque espace, y compris la salle de bain et la cuisine</li>
+<li>Montrer le quartier : une rue commerçante, un parc à proximité, la façade de l'immeuble</li>
+</ul>
+
+<p>À Bordeaux, les éléments architecturaux typiques (pierre blonde, volets en bois, parquet ancien) constituent de véritables atouts visuels. Mettez-les en valeur.</p>
+
+<h2>Rédiger une description d'annonce Airbnb attractive et stratégique</h2>
+
+<p>La description ne sert pas uniquement à informer le voyageur. Elle alimente aussi l'indexation interne d'Airbnb. Pour <strong>rédiger description annonce Airbnb attractive</strong>, structurez-la en blocs clairs et intégrez naturellement les mots-clés que les voyageurs utilisent dans leurs recherches.</p>
+
+<p>Votre description devrait couvrir :</p>
+
+<ul>
+<li>Le type de logement et sa capacité d'accueil</li>
+<li>Les équipements clés (wifi fibre, climatisation, machine à laver, parking)</li>
+<li>L'emplacement précis et les points d'intérêt accessibles à pied</li>
+<li>L'ambiance du quartier et les recommandations locales</li>
+<li>Les modalités d'arrivée et de départ</li>
+</ul>
+
+<p>Évitez les descriptions génériques. Un voyageur qui cherche un logement à Bordeaux veut savoir s'il pourra marcher jusqu'au miroir d'eau, rejoindre la gare Saint-Jean en tram ou dîner dans les Chartrons sans voiture.</p>
+
+<h2>Tarification dynamique : s'aligner sur le marché bordelais</h2>
+
+<p>Le prix est un signal de compétitivité que l'algorithme intègre dans son classement. La <strong>tarification dynamique Airbnb Bordeaux</strong> consiste à ajuster vos tarifs en fonction de la demande locale, des événements et de la saisonnalité.</p>
+
+<h3>Les périodes clés à Bordeaux</h3>
+
+<p>Le marché bordelais connaît des pics de demande bien identifiés :</p>
+
+<ul>
+<li><strong>Fête du vin</strong> (juin, années paires) : forte tension sur les hébergements du centre</li>
+<li><strong>Vinexpo / Wine Paris</strong> : afflux de professionnels avec des budgets élevés</li>
+<li><strong>Été</strong> (juillet-août) : tourisme familial et international</li>
+<li><strong>Matchs au stade Matmut Atlantique</strong> : pics ponctuels mais intenses</li>
+<li><strong>Rentrée universitaire</strong> (septembre) : demande de baux courts pour les étudiants en transition</li>
+</ul>
+
+<p>Les outils de tarification intelligente comme <a href='https://www.pricelabs.co/' rel='nofollow'>PriceLabs</a> ou Beyond Pricing analysent ces données et ajustent automatiquement vos prix. Le résultat : un taux d'occupation plus régulier et un revenu lissé sur l'année.</p>
+
+<h3>L'erreur classique à éviter</h3>
+
+<p>Fixer un prix unique toute l'année revient à être trop cher en basse saison (ce qui fait chuter votre taux de réservation) et trop bon marché en haute saison (ce qui réduit votre rentabilité). L'algorithme interprète un faible taux de réservation comme un manque d'attractivité et rétrograde votre annonce.</p>
+
+<h2>Avis voyageurs : le carburant de votre visibilité</h2>
+
+<p>L'<strong>importance des avis voyageurs Airbnb</strong> ne peut pas être surestimée. Ils constituent le facteur de confiance principal, à la fois pour l'algorithme et pour les futurs voyageurs. Une annonce avec 50 avis à 4,8 sera systématiquement favorisée par rapport à une annonce sans évaluation, même si cette dernière propose un logement objectivement supérieur.</p>
+
+<h3>Comment obtenir des avis positifs de manière constante</h3>
+
+<ul>
+<li>Soigner l'accueil : un message personnalisé avant l'arrivée, des instructions claires</li>
+<li>Surprendre positivement : une bouteille de vin de Bordeaux, un guide papier du quartier</li>
+<li>Répondre rapidement à toute demande pendant le séjour</li>
+<li>Envoyer un message chaleureux après le départ en invitant à laisser un commentaire</li>
+<li>Laisser systématiquement un avis au voyageur en premier, ce qui l'incite à faire de même</li>
+</ul>
+
+<p>Chaque avis récent renforce votre <strong>visibilité annonce location saisonnière</strong>. L'algorithme accorde plus de poids aux évaluations des 90 derniers jours qu'à celles datant d'un an.</p>
+
+<h2>Les signaux comportementaux que l'algorithme surveille</h2>
+
+<p>Au-delà du contenu de l'annonce, la plateforme analyse votre comportement en tant qu'hôte. Trois indicateurs sont particulièrement déterminants :</p>
+
+<ul>
+<li><strong>Taux de réponse</strong> : visez 100 %. Chaque message sans réponse dans les 24 heures pénalise votre classement.</li>
+<li><strong>Taux d'acceptation</strong> : refuser régulièrement des demandes envoie un signal négatif. Si certaines dates ne sont pas disponibles, bloquez-les dans votre calendrier plutôt que de décliner.</li>
+<li><strong>Annulations par l'hôte</strong> : c'est le facteur le plus pénalisant. Une seule annulation peut faire chuter votre positionnement pendant plusieurs semaines.</li>
+</ul>
+
+<p>Ces indicateurs sont visibles dans votre tableau de bord. Surveillez-les chaque semaine.</p>
+
+<h2>Déléguer pour performer : l'atout d'une conciergerie locale</h2>
+
+<p>Maintenir un taux de réponse irréprochable, ajuster les tarifs quotidiennement, coordonner les arrivées et le ménage, répondre aux voyageurs à toute heure : cette exigence opérationnelle représente un investissement en temps considérable. C'est précisément ce que prend en charge une conciergerie spécialisée en location courte durée.</p>
+
+<p>Chez <a href='/'>La Logerie d'Aquitaine</a>, chaque annonce confiée bénéficie d'un suivi complet : optimisation du contenu, coordination des arrivées et départs, accompagnement des voyageurs, entretien du linge et du logement, et ajustement tarifaire continu. L'objectif est de maintenir chaque signal au vert pour que l'algorithme positionne durablement votre bien en haut des résultats.</p>
+
+<h2>Passez à l'action pour optimiser votre annonce Airbnb à Bordeaux</h2>
+
+<p>L'algorithme d'Airbnb n'est pas une boîte noire impénétrable. C'est un système logique qui récompense les annonces bien construites, les hôtes réactifs et les tarifs cohérents avec le marché. En travaillant méthodiquement chacun des leviers présentés ici, vous pouvez sensiblement améliorer votre positionnement et votre taux de remplissage.</p>
+
+<p>Vous souhaitez confier l'optimisation de votre annonce à des professionnels qui connaissent le marché bordelais ? <a href='/'>Contactez La Logerie d'Aquitaine</a> pour un accompagnement sur mesure et commencez à maximiser le potentiel de votre logement dès maintenant.</p></div>
+    <div class="edit-hint">✏️ Corrigez le texte ici si besoin, puis cliquez sur « Copier l'article » et collez-le dans le corps de votre article Simplebo. La mise en forme est conservée.</div>
+  </div>
+
+  <div class="footer">
+    Généré automatiquement par Mon Site En Ligne · Ne pas partager ce lien
+  </div>
+
+</div>
+
+<script>
+function flash(btn, label) {
+  btn.innerHTML = '✅ Copié !';
+  btn.classList.add('copied');
+  setTimeout(function () { btn.innerHTML = label; btn.classList.remove('copied'); }, 3000);
+}
+
+function selectAndCopy(el) {
+  var range = document.createRange();
+  range.selectNodeContents(el);
+  var sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try { document.execCommand('copy'); } catch (e) {}
+  sel.removeAllRanges();
+}
+
+function copyRich(btn) {
+  var el = document.getElementById('article-preview');
+  var html = el.innerHTML.trim();
+  var text = el.innerText.trim();
+  if (navigator.clipboard && window.ClipboardItem) {
+    var item = new ClipboardItem({
+      'text/html': new Blob([html], { type: 'text/html' }),
+      'text/plain': new Blob([text], { type: 'text/plain' })
+    });
+    navigator.clipboard.write([item]).then(function () {
+      flash(btn, '📋 Copier l\'article');
+    }).catch(function () { selectAndCopy(el); flash(btn, '📋 Copier l\'article'); });
+  } else {
+    selectAndCopy(el);
+    flash(btn, '📋 Copier l\'article');
+  }
+}
+
+function copyHtml(btn) {
+  var html = document.getElementById('article-preview').innerHTML.trim();
+  navigator.clipboard.writeText(html).then(function () {
+    flash(btn, '&lt;/&gt; Copier le code HTML');
+  }).catch(function () {
+    var ta = document.createElement('textarea');
+    ta.value = html; document.body.appendChild(ta); ta.select();
+    document.execCommand('copy'); document.body.removeChild(ta);
+    flash(btn, '&lt;/&gt; Copier le code HTML');
+  });
+}
+</script>
+
+</body>
+</html>
