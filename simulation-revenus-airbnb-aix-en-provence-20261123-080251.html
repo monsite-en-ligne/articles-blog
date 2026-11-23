@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulation de revenus Airbnb à Aix-en-Provence : combien peut rapporter votre bien en location courte durée ?</title>
+<style>
+  :root { --accent: #2563EB; --accent-dark: #1d4ed8; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', Arial, sans-serif; background: #f0f2f5; min-height: 100vh; padding: 40px 20px; }
+  .container { max-width: 860px; margin: 0 auto; }
+  .header { text-align: center; margin-bottom: 40px; }
+  .header .badge { display: inline-block; background: #e8f0fe; color: var(--accent); font-size: 12px; font-weight: 600; padding: 6px 16px; border-radius: 20px; margin-bottom: 16px; letter-spacing: 1px; text-transform: uppercase; }
+  .header h1 { font-size: 28px; font-weight: 700; color: #1a1a1a; line-height: 1.3; margin-bottom: 8px; }
+  .header .meta { font-size: 14px; color: #888; }
+  .card { background: #fff; border-radius: 16px; box-shadow: 0 2px 20px rgba(0,0,0,0.06); overflow: hidden; margin-bottom: 24px; }
+  .card-header { padding: 20px 24px; border-bottom: 1px solid #f0f0f0; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .card-header h2 { font-size: 15px; font-weight: 600; color: #444; display: flex; align-items: center; gap: 8px; }
+  .card-header h2 span { font-size: 18px; }
+  .btn-copy { background: var(--accent); color: #fff; border: none; padding: 10px 20px; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: background 0.2s; }
+  .btn-copy:hover { background: var(--accent-dark); }
+  .btn-copy.copied { background: #27ae60; }
+  .preview { padding: 28px 32px; font-size: 15px; line-height: 1.75; color: #2a2a2a; outline: none; }
+  .preview:focus { box-shadow: inset 0 0 0 2px #e8f0fe; }
+  .preview h2 { font-size: 20px; margin: 22px 0 10px; line-height: 1.35; }
+  .preview h3 { font-size: 17px; margin: 18px 0 8px; }
+  .preview p { margin: 0 0 14px; }
+  .preview ul { margin: 0 0 14px 20px; }
+  .preview li { margin-bottom: 6px; }
+  .preview a { color: var(--accent); }
+  .edit-hint { font-size: 12px; color: #aaa; padding: 0 32px 20px; }
+  .instructions { background: #fff; border-radius: 16px; box-shadow: 0 2px 20px rgba(0,0,0,0.06); padding: 24px; }
+  .instructions h3 { font-size: 15px; font-weight: 600; color: #444; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+  .steps { list-style: none; }
+  .steps li { display: flex; align-items: flex-start; gap: 12px; padding: 10px 0; border-bottom: 1px solid #f5f5f5; font-size: 14px; color: #555; }
+  .steps li:last-child { border-bottom: none; }
+  .step-num { background: var(--accent); color: #fff; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0; }
+  .footer { text-align: center; margin-top: 32px; font-size: 12px; color: #aaa; }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="header">
+    <div class="badge">📝 Article prêt à relire</div>
+    <h1>Simulation de revenus Airbnb à Aix-en-Provence : combien peut rapporter votre bien en location courte durée ?</h1>
+    <div class="meta">Généré automatiquement · À relire puis publier sur votre blog</div>
+  </div>
+
+  <div style="background:#fff; border-radius:16px; box-shadow:0 2px 20px rgba(0,0,0,0.06); padding:24px; margin-bottom:24px;">
+    <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:#888; margin-bottom:8px;">Titre de l'article</div>
+    <div style="font-size:16px; font-weight:700; color:#1a1a1a; margin-bottom:20px; padding:12px 16px; background:#f8f8f8; border-radius:8px; border-left:3px solid var(--accent);">Simulation de revenus Airbnb à Aix-en-Provence : combien peut rapporter votre bien en location courte durée ?</div>
+    <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:#888; margin-bottom:8px;">Tags suggérés</div>
+    <div style="font-size:14px; color:#1a1a1a; padding:12px 16px; background:#f8f8f8; border-radius:8px; border-left:3px solid #27ae60;">revenus location saisonnière Marseille</div>
+  </div>
+
+  <div style="background:#fff; border-radius:16px; box-shadow:0 2px 20px rgba(0,0,0,0.06); padding:24px; margin-bottom:24px;">
+    <div style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:#888; margin-bottom:12px;">Image suggérée</div>
+    <img src="https://images.pexels.com/photos/12931939/pexels-photo-12931939.jpeg?auto=compress&cs=tinysrgb&h=650&w=940&fm=jpg&dl=image.jpg" alt="Image suggérée" style="width:100%; height:auto; border-radius:10px; display:block;">
+    <div style="font-size:12px; color:#aaa; margin-top:10px;">Photo : Andrea Davis · Pexels</div>
+  </div>
+
+  <div class="instructions">
+    <h3>📋 Comment publier sur Simplebo</h3>
+    <ol class="steps">
+      <li><div class="step-num">1</div><div>Connectez-vous à votre espace <strong>Simplebo</strong> et créez un <strong>nouvel article</strong></div></li>
+      <li><div class="step-num">2</div><div>Ajoutez le <strong>titre</strong>, les <strong>tags</strong> et la <strong>catégorie</strong></div></li>
+      <li><div class="step-num">3</div><div><strong>Relisez et corrigez</strong> le texte directement dans l'aperçu ci-dessous</div></li>
+      <li><div class="step-num">4</div><div>Cliquez sur <strong>Copier l'article</strong> puis collez dans le corps de l'article (la mise en forme est conservée)</div></li>
+      <li><div class="step-num">5</div><div>Si la couleur ne passe pas, utilisez plutôt <strong>Copier le code HTML</strong> dans la section HTML de Simplebo</div></li>
+      <li><div class="step-num">6</div><div>Cliquez sur <strong>Publier</strong> ✅</div></li>
+    </ol>
+  </div>
+
+  <div class="card" style="margin-top:24px;">
+    <div class="card-header">
+      <h2><span>👀</span> Aperçu de l'article (modifiable)</h2>
+      <div style="display:flex; gap:8px; flex-wrap:wrap;">
+        <button class="btn-copy" onclick="copyRich(this)">📋 Copier l'article</button>
+        <button class="btn-copy" style="background:#888;" onclick="copyHtml(this)">&lt;/&gt; Copier le code HTML</button>
+      </div>
+    </div>
+    <div id="article-preview" class="preview" contenteditable="true"><p>Vous possédez un appartement ou une maison à Aix-en-Provence et vous vous demandez combien pourrait rapporter votre bien en location courte durée ? C'est la question que se posent de nombreux propriétaires dans les Bouches-du-Rhône, et la réponse dépend de plusieurs facteurs très concrets. Entre les <strong>revenus location saisonnière Marseille</strong> et ceux d'Aix-en-Provence, les dynamiques de marché diffèrent sensiblement. Aix possède ses propres atouts, sa saisonnalité et ses spécificités tarifaires. Voici une simulation réaliste pour vous aider à y voir clair.</p>
+
+<h2>Pourquoi Aix-en-Provence est un marché à part dans les Bouches-du-Rhône</h2>
+
+<p>Aix-en-Provence n'est pas Marseille. Le profil des voyageurs, les motifs de séjour et les pics de fréquentation créent un marché distinct, souvent sous-estimé par les propriétaires qui comparent les deux villes sans nuance.</p>
+
+<h3>Un flux touristique régulier, pas seulement estival</h3>
+
+<p>Contrairement à certaines destinations du littoral, Aix bénéficie d'une attractivité étendue sur l'année. Le Festival d'art lyrique en juillet, les congrès au Centre des congrès, les événements culturels tout au long de l'automne et du printemps, sans oublier le thermalisme : autant de raisons qui amènent des voyageurs bien au-delà de la haute saison. Cette diversité de flux permet de maintenir un taux d'occupation solide, y compris en basse saison.</p>
+
+<h3>Un panier moyen supérieur à la moyenne départementale</h3>
+
+<p>Le positionnement premium d'Aix-en-Provence, avec son centre historique, ses hôtels particuliers et sa réputation internationale, tire les tarifs vers le haut. Un T2 bien situé dans le centre ancien peut se louer entre 90 € et 140 € la nuit en moyenne, là où un bien équivalent dans d'autres communes des Bouches-du-Rhône plafonne souvent autour de 70 € à 100 €.</p>
+
+<h2>Simulation de revenus locatifs Aix-en-Provence : chiffres concrets</h2>
+
+<p>Passons aux chiffres. Voici une estimation basée sur les données observées sur les plateformes de réservation pour des logements à Aix-en-Provence, en tenant compte de la saisonnalité locale.</p>
+
+<h3>Studio ou T1 en centre-ville</h3>
+<ul>
+<li>Tarif moyen par nuit : 65 € à 90 €</li>
+<li>Taux d'occupation annuel estimé : 65 % à 75 %</li>
+<li>Revenu brut annuel estimé : 15 000 € à 24 000 €</li>
+</ul>
+
+<h3>T2 dans le centre historique ou quartier Mazarin</h3>
+<ul>
+<li>Tarif moyen par nuit : 90 € à 140 €</li>
+<li>Taux d'occupation annuel estimé : 60 % à 72 %</li>
+<li>Revenu brut annuel estimé : 20 000 € à 36 000 €</li>
+</ul>
+
+<h3>Maison avec extérieur en périphérie (campagne aixoise)</h3>
+<ul>
+<li>Tarif moyen par nuit : 120 € à 220 €</li>
+<li>Taux d'occupation annuel estimé : 50 % à 65 %</li>
+<li>Revenu brut annuel estimé : 22 000 € à 52 000 €</li>
+</ul>
+
+<p>Ces fourchettes sont indicatives. Le revenu réel dépend de la qualité de l'annonce, des photos, de la réactivité aux messages, de la stratégie tarifaire appliquée et bien sûr de l'expérience offerte aux voyageurs.</p>
+
+<h2>Calculer vos revenus Airbnb dans les Bouches-du-Rhône : les variables clés</h2>
+
+<p>Une simulation fiable ne se limite pas à multiplier un tarif par un nombre de nuits. Plusieurs variables influencent directement votre rentabilité.</p>
+
+<h3>Le taux d'occupation, indicateur central</h3>
+
+<p>Le taux d'occupation Airbnb à Aix-en-Provence varie fortement selon le quartier, le type de bien et la qualité du service. Un logement avec des avis 5 étoiles, une annonce optimisée et une tarification dynamique atteindra facilement 70 % d'occupation annuelle. Un bien mal présenté ou mal tarifé peut descendre sous les 40 %, même dans un secteur porteur.</p>
+
+<h3>Les charges à déduire pour estimer le revenu net</h3>
+
+<p>Pour passer du revenu brut au revenu net, il faut soustraire :</p>
+<ul>
+<li>Les frais de ménage et de blanchisserie entre chaque séjour</li>
+<li>Les consommables (produits d'accueil, café, savon)</li>
+<li>La commission des plateformes (3 % à 15 % selon la configuration)</li>
+<li>L'éventuelle commission d'une conciergerie partenaire</li>
+<li>Les charges de copropriété, assurance et taxe de séjour</li>
+<li>La fiscalité applicable (micro-BIC ou réel)</li>
+</ul>
+
+<p>En règle générale, le revenu net représente entre 55 % et 70 % du revenu brut, selon le niveau de délégation choisi et le régime fiscal.</p>
+
+<h2>Rentabilité location courte durée vs longue durée à Aix-en-Provence</h2>
+
+<p>C'est la comparaison que font spontanément tous les propriétaires. Et dans le cas d'Aix-en-Provence, les résultats sont souvent sans ambiguïté.</p>
+
+<p>Un T2 loué en bail classique dans le centre d'Aix rapporte en moyenne entre 800 € et 1 100 € par mois, soit 9 600 € à 13 200 € par an. Le même bien exploité en location courte durée avec un bon niveau de service peut générer entre 20 000 € et 36 000 € brut annuels. Même après déduction des charges, l'écart reste significatif.</p>
+
+<p>Évidemment, la location courte durée implique une implication opérationnelle bien plus importante : accueil des voyageurs, coordination du ménage, suivi des réservations, maintenance. C'est précisément sur ce point que le recours à une conciergerie locale fait toute la différence.</p>
+
+<h2>Maximiser vos revenus location saisonnière à Aix-en-Provence</h2>
+
+<p>Quelques leviers permettent d'augmenter sensiblement la rentabilité de votre bien, sans investissement lourd.</p>
+
+<h3>Optimiser votre annonce et vos photos</h3>
+
+<p>Les voyageurs réservent avec les yeux. Des photos professionnelles, une description précise mettant en valeur la localisation (proximité du Cours Mirabeau, de la Rotonde, du marché provençal) et un titre accrocheur augmentent mécaniquement le taux de clic et de conversion. Selon <a href='https://www.airdna.co/' rel='nofollow'>AirDNA</a>, les annonces avec photos professionnelles génèrent en moyenne 20 % de réservations supplémentaires.</p>
+
+<h3>Appliquer une tarification dynamique</h3>
+
+<p>Fixer un prix unique toute l'année, c'est perdre de l'argent en haute saison et rester vide en basse saison. Une stratégie tarifaire adaptée aux événements locaux (Festival d'Aix, week-ends prolongés, périodes de congrès) permet de capter chaque euro de valeur sans sacrifier le taux d'occupation.</p>
+
+<h3>Soigner l'expérience voyageur</h3>
+
+<p>Les avis positifs alimentent un cercle vertueux : meilleur classement dans les résultats de recherche, plus de réservations, tarifs plus élevés. Un accueil personnalisé, un logement impeccable, du linge de qualité et des petites attentions provençales (savon de Marseille, calissons d'Aix) font la différence dans les commentaires.</p>
+
+<img src='revenus-location-saisonniere-aix-en-provence.jpg' alt='Simulation revenus location saisonnière Marseille et Aix-en-Provence pour propriétaires' />
+
+<h2>Faire estimer le potentiel de votre bien gratuitement</h2>
+
+<p>Les chiffres présentés ici donnent un ordre de grandeur fiable, mais chaque logement est unique. L'emplacement exact, l'étage, la vue, l'équipement, la capacité d'accueil : tout cela influence le revenu réel.</p>
+
+<p>Chez <a href='/'>Ma Conciergerie Provençale</a>, Hubert et Angélique accompagnent les propriétaires entre Marseille, Aix-en-Provence et les communes environnantes des Bouches-du-Rhône. Estimation personnalisée de vos revenus potentiels, optimisation de votre annonce, coordination complète du ménage, de l'accueil et du suivi des réservations : tout est pensé pour que votre bien travaille pour vous, sans que vous ayez à vous en occuper au quotidien.</p>
+
+<p>Contactez-nous pour obtenir une estimation gratuite adaptée à votre logement. Vous saurez exactement combien votre bien peut rapporter, avec des chiffres basés sur le marché local réel.</p></div>
+    <div class="edit-hint">✏️ Corrigez le texte ici si besoin, puis cliquez sur « Copier l'article » et collez-le dans le corps de votre article Simplebo. La mise en forme est conservée.</div>
+  </div>
+
+  <div class="footer">
+    Généré automatiquement par Mon Site En Ligne · Ne pas partager ce lien
+  </div>
+
+</div>
+
+<script>
+function flash(btn, label) {
+  btn.innerHTML = '✅ Copié !';
+  btn.classList.add('copied');
+  setTimeout(function () { btn.innerHTML = label; btn.classList.remove('copied'); }, 3000);
+}
+
+function selectAndCopy(el) {
+  var range = document.createRange();
+  range.selectNodeContents(el);
+  var sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try { document.execCommand('copy'); } catch (e) {}
+  sel.removeAllRanges();
+}
+
+function copyRich(btn) {
+  var el = document.getElementById('article-preview');
+  var html = el.innerHTML.trim();
+  var text = el.innerText.trim();
+  if (navigator.clipboard && window.ClipboardItem) {
+    var item = new ClipboardItem({
+      'text/html': new Blob([html], { type: 'text/html' }),
+      'text/plain': new Blob([text], { type: 'text/plain' })
+    });
+    navigator.clipboard.write([item]).then(function () {
+      flash(btn, '📋 Copier l\'article');
+    }).catch(function () { selectAndCopy(el); flash(btn, '📋 Copier l\'article'); });
+  } else {
+    selectAndCopy(el);
+    flash(btn, '📋 Copier l\'article');
+  }
+}
+
+function copyHtml(btn) {
+  var html = document.getElementById('article-preview').innerHTML.trim();
+  navigator.clipboard.writeText(html).then(function () {
+    flash(btn, '&lt;/&gt; Copier le code HTML');
+  }).catch(function () {
+    var ta = document.createElement('textarea');
+    ta.value = html; document.body.appendChild(ta); ta.select();
+    document.execCommand('copy'); document.body.removeChild(ta);
+    flash(btn, '&lt;/&gt; Copier le code HTML');
+  });
+}
+</script>
+
+</body>
+</html>
